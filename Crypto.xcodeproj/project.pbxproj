@@ -907,6 +907,7 @@
 				216CAE491AE6B273009A69EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		21FD8C721AE6B03F008DCDBA /* Build configuration list for PBXNativeTarget "Crypto-iOS" */ = {
 			isa = XCConfigurationList;
