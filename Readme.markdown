@@ -2,7 +2,9 @@
 
 Simple CommonCrypto wrapper for Swift for Mac and iOS with [Carthage](https://github.com/carthage/carthage) support.
 
-This is a work in progress.
+Released under the [MIT license](LICENSE). Enjoy.
+
+**This is a work in progress.**
 
 
 ## Documentation
@@ -10,6 +12,8 @@ This is a work in progress.
 Currently, only hashing is supported. There are extensions for `NSData` and `NSString`.
 
 ``` swift
+import Crypto
+
 let data = NSData(...)
 data.MD2    // <NSData ...>
 data.MD4    // <NSData ...>
@@ -31,4 +35,12 @@ string.SHA384 // "f43211f34235f416ed799126e46ff3b77155acff484eec2bbe93e081082a30
 string.SHA512 // "aa9a88785afb81fcb66da5b86d0aaf543dd883c8cf1e74f2f42c62195006606c69613170d56d2ecb8db6fb03f5acb6bdd0ffaf54bdf788854ddafc6becfdf3c7"
 ```
 
-Released under the [MIT license](LICENSE). Enjoy.
+## CommonCrypto
+
+It's worth noting, you can't directly use `CommonCrypto` in Swift since Apple doesn't define a module for it. In the project, there is a `CommonCrypto` framework that wraps the library. This makes importing it into Swift as simple as
+
+``` swift
+import CommonCrypto
+```
+
+If you want to use `CommonCrypto` in your own project and don't care about my helper extensions, this is still the easiest way to use it. You can just include the `CommonCrypto` framework and not the `Crypto` framework to just use the wrapper.
