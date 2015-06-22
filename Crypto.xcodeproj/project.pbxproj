@@ -11,12 +11,12 @@
 		211216491AE68AD3004E1CE6 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2112163D1AE68AD2004E1CE6 /* Crypto.framework */; };
 		211216501AE68AD3004E1CE6 /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* CryptoTests.swift */; };
 		2112167B1AE68C18004E1CE6 /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
-		2112167D1AE68C22004E1CE6 /* NSString+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* NSString+Crypto.swift */; };
+		2112167D1AE68C22004E1CE6 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		211216AA1AE68E39004E1CE6 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211216831AE68D26004E1CE6 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		216CAE4F1AE6B2B3009A69EF /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216CAE341AE6B273009A69EF /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		21FD8C661AE6B03F008DCDBA /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */; };
 		21FD8C741AE6B07D008DCDBA /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
-		21FD8C751AE6B07D008DCDBA /* NSString+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* NSString+Crypto.swift */; };
+		21FD8C751AE6B07D008DCDBA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		21FD8C761AE6B080008DCDBA /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21FD8C771AE6B088008DCDBA /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* CryptoTests.swift */; };
 /* End PBXBuildFile section */
@@ -60,7 +60,7 @@
 		2112164E1AE68AD3004E1CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2112164F1AE68AD3004E1CE6 /* CryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTests.swift; sourceTree = "<group>"; };
 		2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Crypto.swift"; sourceTree = "<group>"; };
-		2112167C1AE68C22004E1CE6 /* NSString+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSString+Crypto.swift"; sourceTree = "<group>"; };
+		2112167C1AE68C22004E1CE6 /* String+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		211216831AE68D26004E1CE6 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		211216861AE68D26004E1CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CommonCrypto.xcconfig; sourceTree = "<group>"; };
@@ -153,7 +153,7 @@
 			children = (
 				211216421AE68AD2004E1CE6 /* Crypto.h */,
 				2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */,
-				2112167C1AE68C22004E1CE6 /* NSString+Crypto.swift */,
+				2112167C1AE68C22004E1CE6 /* String+Crypto.swift */,
 				211216401AE68AD2004E1CE6 /* Supporting Files */,
 			);
 			path = Crypto;
@@ -454,7 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2112167B1AE68C18004E1CE6 /* NSData+Crypto.swift in Sources */,
-				2112167D1AE68C22004E1CE6 /* NSString+Crypto.swift in Sources */,
+				2112167D1AE68C22004E1CE6 /* String+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,7 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21FD8C751AE6B07D008DCDBA /* NSString+Crypto.swift in Sources */,
+				21FD8C751AE6B07D008DCDBA /* String+Crypto.swift in Sources */,
 				21FD8C741AE6B07D008DCDBA /* NSData+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
