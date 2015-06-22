@@ -56,7 +56,7 @@
 		2112163D1AE68AD2004E1CE6 /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		211216411AE68AD2004E1CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211216421AE68AD2004E1CE6 /* Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
-		211216481AE68AD3004E1CE6 /* CryptoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		211216481AE68AD3004E1CE6 /* CryptoTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2112164E1AE68AD3004E1CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2112164F1AE68AD3004E1CE6 /* CryptoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTests.swift; sourceTree = "<group>"; };
 		2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Crypto.swift"; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 		211216A61AE68E17004E1CE6 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		216CAE341AE6B273009A69EF /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		21FD8C651AE6B03F008DCDBA /* Crypto-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD8C7A1AE6B11A008DCDBA /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -139,10 +139,10 @@
 			isa = PBXGroup;
 			children = (
 				2112163D1AE68AD2004E1CE6 /* Crypto.framework */,
-				211216481AE68AD3004E1CE6 /* CryptoTests.xctest */,
+				211216481AE68AD3004E1CE6 /* CryptoTests-OSX.xctest */,
 				211216831AE68D26004E1CE6 /* CommonCrypto.framework */,
 				21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */,
-				21FD8C651AE6B03F008DCDBA /* Crypto-iOSTests.xctest */,
+				21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */,
 				216CAE341AE6B273009A69EF /* CommonCrypto.framework */,
 			);
 			name = Products;
@@ -241,9 +241,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2112163C1AE68AD2004E1CE6 /* Crypto */ = {
+		2112163C1AE68AD2004E1CE6 /* Crypto-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 211216531AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "Crypto" */;
+			buildConfigurationList = 211216531AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "Crypto-OSX" */;
 			buildPhases = (
 				211216381AE68AD2004E1CE6 /* Sources */,
 				211216391AE68AD2004E1CE6 /* Frameworks */,
@@ -255,14 +255,14 @@
 			dependencies = (
 				211216A51AE68E10004E1CE6 /* PBXTargetDependency */,
 			);
-			name = Crypto;
+			name = "Crypto-OSX";
 			productName = Crypto;
 			productReference = 2112163D1AE68AD2004E1CE6 /* Crypto.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		211216471AE68AD3004E1CE6 /* CryptoTests */ = {
+		211216471AE68AD3004E1CE6 /* CryptoTests-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 211216561AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "CryptoTests" */;
+			buildConfigurationList = 211216561AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "CryptoTests-OSX" */;
 			buildPhases = (
 				211216441AE68AD3004E1CE6 /* Sources */,
 				211216451AE68AD3004E1CE6 /* Frameworks */,
@@ -273,14 +273,14 @@
 			dependencies = (
 				2112164B1AE68AD3004E1CE6 /* PBXTargetDependency */,
 			);
-			name = CryptoTests;
+			name = "CryptoTests-OSX";
 			productName = CryptoTests;
-			productReference = 211216481AE68AD3004E1CE6 /* CryptoTests.xctest */;
+			productReference = 211216481AE68AD3004E1CE6 /* CryptoTests-OSX.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		211216821AE68D26004E1CE6 /* CommonCrypto */ = {
+		211216821AE68D26004E1CE6 /* CommonCrypto-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 211216961AE68D26004E1CE6 /* Build configuration list for PBXNativeTarget "CommonCrypto" */;
+			buildConfigurationList = 211216961AE68D26004E1CE6 /* Build configuration list for PBXNativeTarget "CommonCrypto-OSX" */;
 			buildPhases = (
 				2112167E1AE68D26004E1CE6 /* Sources */,
 				2112167F1AE68D26004E1CE6 /* Frameworks */,
@@ -291,7 +291,7 @@
 			);
 			dependencies = (
 			);
-			name = CommonCrypto;
+			name = "CommonCrypto-OSX";
 			productName = CommonCrypto;
 			productReference = 211216831AE68D26004E1CE6 /* CommonCrypto.framework */;
 			productType = "com.apple.product-type.framework";
@@ -333,9 +333,9 @@
 			productReference = 21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		21FD8C641AE6B03F008DCDBA /* Crypto-iOSTests */ = {
+		21FD8C641AE6B03F008DCDBA /* CryptoTests-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21FD8C731AE6B03F008DCDBA /* Build configuration list for PBXNativeTarget "Crypto-iOSTests" */;
+			buildConfigurationList = 21FD8C731AE6B03F008DCDBA /* Build configuration list for PBXNativeTarget "CryptoTests-iOS" */;
 			buildPhases = (
 				21FD8C611AE6B03F008DCDBA /* Sources */,
 				21FD8C621AE6B03F008DCDBA /* Frameworks */,
@@ -346,9 +346,9 @@
 			dependencies = (
 				21FD8C681AE6B03F008DCDBA /* PBXTargetDependency */,
 			);
-			name = "Crypto-iOSTests";
+			name = "CryptoTests-iOS";
 			productName = "Crypto-iOSTests";
-			productReference = 21FD8C651AE6B03F008DCDBA /* Crypto-iOSTests.xctest */;
+			productReference = 21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -357,7 +357,8 @@
 		211216341AE68AD2004E1CE6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Sam Soffes";
 				TargetAttributes = {
 					2112163C1AE68AD2004E1CE6 = {
@@ -392,12 +393,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				211216821AE68D26004E1CE6 /* CommonCrypto */,
-				2112163C1AE68AD2004E1CE6 /* Crypto */,
-				211216471AE68AD3004E1CE6 /* CryptoTests */,
+				211216821AE68D26004E1CE6 /* CommonCrypto-OSX */,
+				2112163C1AE68AD2004E1CE6 /* Crypto-OSX */,
+				211216471AE68AD3004E1CE6 /* CryptoTests-OSX */,
 				216CAE331AE6B273009A69EF /* CommonCrypto-iOS */,
 				21FD8C5A1AE6B03F008DCDBA /* Crypto-iOS */,
-				21FD8C641AE6B03F008DCDBA /* Crypto-iOSTests */,
+				21FD8C641AE6B03F008DCDBA /* CryptoTests-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -501,12 +502,12 @@
 /* Begin PBXTargetDependency section */
 		2112164B1AE68AD3004E1CE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2112163C1AE68AD2004E1CE6 /* Crypto */;
+			target = 2112163C1AE68AD2004E1CE6 /* Crypto-OSX */;
 			targetProxy = 2112164A1AE68AD3004E1CE6 /* PBXContainerItemProxy */;
 		};
 		211216A51AE68E10004E1CE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 211216821AE68D26004E1CE6 /* CommonCrypto */;
+			target = 211216821AE68D26004E1CE6 /* CommonCrypto-OSX */;
 			targetProxy = 211216A41AE68E10004E1CE6 /* PBXContainerItemProxy */;
 		};
 		216CAE4E1AE6B2AD009A69EF /* PBXTargetDependency */ = {
@@ -543,6 +544,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -611,6 +613,7 @@
 		211216541AE68AD3004E1CE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -625,7 +628,8 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
+				PRODUCT_NAME = Crypto;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -634,6 +638,7 @@
 		211216551AE68AD3004E1CE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -648,7 +653,8 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
+				PRODUCT_NAME = Crypto;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -667,6 +673,7 @@
 				);
 				INFOPLIST_FILE = CryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -681,6 +688,7 @@
 				);
 				INFOPLIST_FILE = CryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -689,6 +697,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -702,7 +711,8 @@
 				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
+				PRODUCT_NAME = CommonCrypto;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -711,6 +721,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -720,7 +731,8 @@
 				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
+				PRODUCT_NAME = CommonCrypto;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -729,6 +741,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -742,6 +755,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/CommonCrypto/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
 				PRODUCT_NAME = CommonCrypto;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -753,6 +767,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -761,6 +776,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/CommonCrypto/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
 				PRODUCT_NAME = CommonCrypto;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -772,6 +788,7 @@
 		21FD8C6E1AE6B03F008DCDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
@@ -789,6 +806,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
 				PRODUCT_NAME = Crypto;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -799,6 +817,7 @@
 		21FD8C6F1AE6B03F008DCDBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -811,6 +830,7 @@
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
 				PRODUCT_NAME = Crypto;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -834,6 +854,7 @@
 				);
 				INFOPLIST_FILE = CryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 			};
@@ -849,6 +870,7 @@
 				);
 				INFOPLIST_FILE = CryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -867,7 +889,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		211216531AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "Crypto" */ = {
+		211216531AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "Crypto-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				211216541AE68AD3004E1CE6 /* Debug */,
@@ -876,7 +898,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		211216561AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "CryptoTests" */ = {
+		211216561AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "CryptoTests-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				211216571AE68AD3004E1CE6 /* Debug */,
@@ -885,7 +907,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		211216961AE68D26004E1CE6 /* Build configuration list for PBXNativeTarget "CommonCrypto" */ = {
+		211216961AE68D26004E1CE6 /* Build configuration list for PBXNativeTarget "CommonCrypto-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				211216971AE68D26004E1CE6 /* Debug */,
@@ -912,7 +934,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21FD8C731AE6B03F008DCDBA /* Build configuration list for PBXNativeTarget "Crypto-iOSTests" */ = {
+		21FD8C731AE6B03F008DCDBA /* Build configuration list for PBXNativeTarget "CryptoTests-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21FD8C701AE6B03F008DCDBA /* Debug */,

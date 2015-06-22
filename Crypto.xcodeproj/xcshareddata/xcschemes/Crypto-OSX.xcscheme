@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0630"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -16,21 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2112163C1AE68AD2004E1CE6"
                BuildableName = "Crypto.framework"
-               BlueprintName = "Crypto"
-               ReferencedContainer = "container:Crypto.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "211216471AE68AD3004E1CE6"
-               BuildableName = "CryptoTests.xctest"
-               BlueprintName = "CryptoTests"
+               BlueprintName = "Crypto-OSX"
                ReferencedContainer = "container:Crypto.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "211216471AE68AD3004E1CE6"
-               BuildableName = "CryptoTests.xctest"
-               BlueprintName = "CryptoTests"
+               BuildableName = "CryptoTests-OSX.xctest"
+               BlueprintName = "CryptoTests-OSX"
                ReferencedContainer = "container:Crypto.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -58,10 +44,12 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2112163C1AE68AD2004E1CE6"
             BuildableName = "Crypto.framework"
-            BlueprintName = "Crypto"
+            BlueprintName = "Crypto-OSX"
             ReferencedContainer = "container:Crypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -71,13 +59,14 @@
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2112163C1AE68AD2004E1CE6"
             BuildableName = "Crypto.framework"
-            BlueprintName = "Crypto"
+            BlueprintName = "Crypto-OSX"
             ReferencedContainer = "container:Crypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -95,7 +84,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2112163C1AE68AD2004E1CE6"
             BuildableName = "Crypto.framework"
-            BlueprintName = "Crypto"
+            BlueprintName = "Crypto-OSX"
             ReferencedContainer = "container:Crypto.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
