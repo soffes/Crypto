@@ -8,4 +8,6 @@
 
 MODULEMAP_FILE[sdk=iphoneos*] = $(SRCROOT)/CommonCrypto/iphoneos.modulemap
 MODULEMAP_FILE[sdk=iphonesimulator*] = $(SRCROOT)/CommonCrypto/iphonesimulator.modulemap
+MODULEMAP_FILE[sdk=watchos*] = $(SRCROOT)/CommonCrypto/watchos.modulemap
+MODULEMAP_FILE[sdk=watchsimulator*] = $(SRCROOT)/CommonCrypto/watchsimulator.modulemap
 MODULEMAP_FILE[sdk=macosx*] = $(SRCROOT)/CommonCrypto/macosx.modulemap

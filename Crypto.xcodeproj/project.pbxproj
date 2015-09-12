@@ -19,6 +19,10 @@
 		21FD8C751AE6B07D008DCDBA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		21FD8C761AE6B080008DCDBA /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21FD8C771AE6B088008DCDBA /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* CryptoTests.swift */; };
+		8045033F1BA2101C002A5470 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		804503401BA21029002A5470 /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; settings = {ASSET_TAGS = (); }; };
+		804503411BA2102D002A5470 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; settings = {ASSET_TAGS = (); }; };
+		804503431BA2117F002A5470 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 804503281BA209F6002A5470 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD8C7A1AE6B11A008DCDBA /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
+		804503281BA209F6002A5470 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		804503301BA20BD0002A5470 /* watchos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
+		804503311BA20C1A002A5470 /* watchsimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
+		804503371BA20F37002A5470 /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		804503241BA209F6002A5470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804503331BA20F37002A5470 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804503431BA2117F002A5470 /* CommonCrypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -144,6 +167,8 @@
 				21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */,
 				21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */,
 				216CAE341AE6B273009A69EF /* CommonCrypto.framework */,
+				804503371BA20F37002A5470 /* Crypto.framework */,
+				804503281BA209F6002A5470 /* CommonCrypto.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +217,8 @@
 				2112169D1AE68DD9004E1CE6 /* iphoneos.modulemap */,
 				2112169E1AE68DD9004E1CE6 /* iphonesimulator.modulemap */,
 				2112169F1AE68DD9004E1CE6 /* macosx.modulemap */,
+				804503301BA20BD0002A5470 /* watchos.modulemap */,
+				804503311BA20C1A002A5470 /* watchsimulator.modulemap */,
 			);
 			path = CommonCrypto;
 			sourceTree = "<group>";
@@ -235,6 +262,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FD8C761AE6B080008DCDBA /* Crypto.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804503251BA209F6002A5470 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804503341BA20F37002A5470 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8045033F1BA2101C002A5470 /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +393,42 @@
 			productReference = 21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		804503271BA209F6002A5470 /* CommonCrypto-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8045032F1BA209F6002A5470 /* Build configuration list for PBXNativeTarget "CommonCrypto-watchOS" */;
+			buildPhases = (
+				804503231BA209F6002A5470 /* Sources */,
+				804503241BA209F6002A5470 /* Frameworks */,
+				804503251BA209F6002A5470 /* Headers */,
+				804503261BA209F6002A5470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CommonCrypto-watchOS";
+			productName = CommonCrypto;
+			productReference = 804503281BA209F6002A5470 /* CommonCrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		804503361BA20F37002A5470 /* Crypto-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8045033C1BA20F37002A5470 /* Build configuration list for PBXNativeTarget "Crypto-watchOS" */;
+			buildPhases = (
+				804503321BA20F37002A5470 /* Sources */,
+				804503331BA20F37002A5470 /* Frameworks */,
+				804503341BA20F37002A5470 /* Headers */,
+				804503351BA20F37002A5470 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crypto-watchOS";
+			productName = "Crypto-watchOS";
+			productReference = 804503371BA20F37002A5470 /* Crypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -379,6 +457,12 @@
 					21FD8C641AE6B03F008DCDBA = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					804503271BA209F6002A5470 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					804503361BA20F37002A5470 = {
+						CreatedOnToolsVersion = 7.0;
+					};
 				};
 			};
 			buildConfigurationList = 211216371AE68AD2004E1CE6 /* Build configuration list for PBXProject "Crypto" */;
@@ -399,6 +483,8 @@
 				216CAE331AE6B273009A69EF /* CommonCrypto-iOS */,
 				21FD8C5A1AE6B03F008DCDBA /* Crypto-iOS */,
 				21FD8C641AE6B03F008DCDBA /* CryptoTests-iOS */,
+				804503271BA209F6002A5470 /* CommonCrypto-watchOS */,
+				804503361BA20F37002A5470 /* Crypto-watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -440,6 +526,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		21FD8C631AE6B03F008DCDBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804503261BA209F6002A5470 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804503351BA20F37002A5470 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -494,6 +594,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FD8C771AE6B088008DCDBA /* CryptoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804503231BA209F6002A5470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		804503321BA20F37002A5470 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				804503401BA21029002A5470 /* NSData+Crypto.swift in Sources */,
+				804503411BA2102D002A5470 /* String+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -754,7 +870,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/CommonCrypto/Info.plist";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
@@ -775,7 +891,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/CommonCrypto/Info.plist";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
@@ -879,6 +995,100 @@
 			};
 			name = Release;
 		};
+		8045032D1BA209F6002A5470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8045032E1BA209F6002A5470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		8045033D1BA20F37002A5470 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Crypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"${inherited}",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
+				PRODUCT_NAME = Crypto;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		8045033E1BA20F37002A5470 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Crypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"${inherited}",
+					"$(SDKROOT)/usr/lib/system",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
+				PRODUCT_NAME = Crypto;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -941,6 +1151,24 @@
 			buildConfigurations = (
 				21FD8C701AE6B03F008DCDBA /* Debug */,
 				21FD8C711AE6B03F008DCDBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8045032F1BA209F6002A5470 /* Build configuration list for PBXNativeTarget "CommonCrypto-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8045032D1BA209F6002A5470 /* Debug */,
+				8045032E1BA209F6002A5470 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8045033C1BA20F37002A5470 /* Build configuration list for PBXNativeTarget "Crypto-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8045033D1BA20F37002A5470 /* Debug */,
+				8045033E1BA20F37002A5470 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
