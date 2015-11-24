@@ -45,6 +45,10 @@ extension String {
 		return String(digestData: hashData?.SHA512, length: CC_SHA512_DIGEST_LENGTH)
 	}
 
+	public var adler32: Int? {
+		return hashData?.adler32
+	}
+
 	public var CRC32: Int? {
 		return hashData?.CRC32
 	}

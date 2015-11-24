@@ -42,6 +42,11 @@ class CryptoTests: XCTestCase {
 		XCTAssertEqual("aa9a88785afb81fcb66da5b86d0aaf543dd883c8cf1e74f2f42c62195006606c69613170d56d2ecb8db6fb03f5acb6bdd0ffaf54bdf788854ddafc6becfdf3c7", "sam".SHA512)
 	}
 
+	func testAdler32() {
+		XCTAssertEqual(42664258, "sam".adler32)
+		XCTAssertEqual(149553799, "soffes".adler32)
+	}
+
 	func testCRC32() {
 		XCTAssertEqual(3860023320, "sam".CRC32)
 	}

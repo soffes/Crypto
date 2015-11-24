@@ -62,7 +62,10 @@ extension NSData {
 		return NSData(bytes: hash, length: Int(CC_SHA512_DIGEST_LENGTH))
 	}
 
-	// public func crc32(crc: uLong, _ buf: UnsafePointer<Bytef>, _ len: uInt) -> uLong
+	public var adler32: Int {
+		let buffer = UnsafePointer<Bytef>(bytes)
+		return Int(Zlib.adler32(0, buffer, uInt(length)))
+	}
 
 	public var CRC32: Int {
 		let buffer = UnsafePointer<Bytef>(bytes)
