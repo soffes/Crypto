@@ -14,6 +14,14 @@
 		2112167D1AE68C22004E1CE6 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		211216AA1AE68E39004E1CE6 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211216831AE68D26004E1CE6 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		216CAE4F1AE6B2B3009A69EF /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216CAE341AE6B273009A69EF /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		21C069291C04317E00BD92CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C069221C04317E00BD92CC /* Info.plist */; };
+		21C0692A1C04317E00BD92CC /* Zlib.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21C069281C04317E00BD92CC /* Zlib.xcconfig */; };
+		21C069411C04331C00BD92CC /* Zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0691F1C04315600BD92CC /* Zlib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		21C069441C04339000BD92CC /* Zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C069331C0431A700BD92CC /* Zlib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		21C069491C0433A100BD92CC /* Zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0693D1C0431CF00BD92CC /* Zlib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		21C0694B1C04357600BD92CC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0694A1C04357600BD92CC /* libz.tbd */; };
+		21C0694D1C04358F00BD92CC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0694C1C04358F00BD92CC /* libz.tbd */; };
+		21C0694F1C04359500BD92CC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0694E1C04359500BD92CC /* libz.tbd */; };
 		21FD8C661AE6B03F008DCDBA /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */; };
 		21FD8C741AE6B07D008DCDBA /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
 		21FD8C751AE6B07D008DCDBA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
@@ -47,6 +55,34 @@
 			remoteGlobalIDString = 216CAE331AE6B273009A69EF;
 			remoteInfo = "CommonCrypto-iOS";
 		};
+		21C0693F1C04331600BD92CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 211216341AE68AD2004E1CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21C069171C04315600BD92CC;
+			remoteInfo = "Zlib-OSX";
+		};
+		21C069421C04338C00BD92CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 211216341AE68AD2004E1CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21C0692B1C0431A700BD92CC;
+			remoteInfo = "Zlib-iOS";
+		};
+		21C069451C04339C00BD92CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 211216341AE68AD2004E1CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 804503271BA209F6002A5470;
+			remoteInfo = "CommonCrypto-watchOS";
+		};
+		21C069471C04339E00BD92CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 211216341AE68AD2004E1CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21C069351C0431CF00BD92CC;
+			remoteInfo = "Zlib-watchOS";
+		};
 		21FD8C671AE6B03F008DCDBA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 211216341AE68AD2004E1CE6 /* Project object */;
@@ -73,6 +109,19 @@
 		2112169F1AE68DD9004E1CE6 /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
 		211216A61AE68E17004E1CE6 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
 		216CAE341AE6B273009A69EF /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C0691F1C04315600BD92CC /* Zlib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C069221C04317E00BD92CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21C069231C04317E00BD92CC /* iphoneos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphoneos.modulemap; sourceTree = "<group>"; };
+		21C069241C04317E00BD92CC /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
+		21C069251C04317E00BD92CC /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
+		21C069261C04317E00BD92CC /* watchos.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
+		21C069271C04317E00BD92CC /* watchsimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
+		21C069281C04317E00BD92CC /* Zlib.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Zlib.xcconfig; sourceTree = "<group>"; };
+		21C069331C0431A700BD92CC /* Zlib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C0693D1C0431CF00BD92CC /* Zlib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21C0694A1C04357600BD92CC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		21C0694C1C04358F00BD92CC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
+		21C0694E1C04359500BD92CC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD8C7A1AE6B11A008DCDBA /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
@@ -87,6 +136,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C0694B1C04357600BD92CC /* libz.tbd in Frameworks */,
+				21C069411C04331C00BD92CC /* Zlib.framework in Frameworks */,
 				211216AA1AE68E39004E1CE6 /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -113,10 +164,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21C069191C04315600BD92CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C0692D1C0431A700BD92CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C069371C0431CF00BD92CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21FD8C571AE6B03F008DCDBA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C0694D1C04358F00BD92CC /* libz.tbd in Frameworks */,
+				21C069441C04339000BD92CC /* Zlib.framework in Frameworks */,
 				216CAE4F1AE6B2B3009A69EF /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +214,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C0694F1C04359500BD92CC /* libz.tbd in Frameworks */,
+				21C069491C0433A100BD92CC /* Zlib.framework in Frameworks */,
 				804503431BA2117F002A5470 /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,6 +229,7 @@
 				2112163F1AE68AD2004E1CE6 /* Crypto */,
 				2112164C1AE68AD3004E1CE6 /* CryptoTests */,
 				211216841AE68D26004E1CE6 /* CommonCrypto */,
+				21C069211C04317E00BD92CC /* Zlib */,
 				211216AB1AE68E43004E1CE6 /* Frameworks */,
 				2112163E1AE68AD2004E1CE6 /* Products */,
 			);
@@ -169,6 +246,9 @@
 				216CAE341AE6B273009A69EF /* CommonCrypto.framework */,
 				804503371BA20F37002A5470 /* Crypto.framework */,
 				804503281BA209F6002A5470 /* CommonCrypto.framework */,
+				21C0691F1C04315600BD92CC /* Zlib.framework */,
+				21C069331C0431A700BD92CC /* Zlib.framework */,
+				21C0693D1C0431CF00BD92CC /* Zlib.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -226,10 +306,27 @@
 		211216AB1AE68E43004E1CE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21C0694E1C04359500BD92CC /* libz.tbd */,
+				21C0694C1C04358F00BD92CC /* libz.tbd */,
+				21C0694A1C04357600BD92CC /* libz.tbd */,
 				21FD8C7A1AE6B11A008DCDBA /* libcommonCrypto.dylib */,
 				211216A61AE68E17004E1CE6 /* libcommonCrypto.dylib */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21C069211C04317E00BD92CC /* Zlib */ = {
+			isa = PBXGroup;
+			children = (
+				21C069221C04317E00BD92CC /* Info.plist */,
+				21C069231C04317E00BD92CC /* iphoneos.modulemap */,
+				21C069241C04317E00BD92CC /* iphonesimulator.modulemap */,
+				21C069251C04317E00BD92CC /* macosx.modulemap */,
+				21C069261C04317E00BD92CC /* watchos.modulemap */,
+				21C069271C04317E00BD92CC /* watchsimulator.modulemap */,
+				21C069281C04317E00BD92CC /* Zlib.xcconfig */,
+			);
+			path = Zlib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +348,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		216CAE311AE6B273009A69EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C0691A1C04315600BD92CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C0692E1C0431A700BD92CC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C069381C0431CF00BD92CC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -295,6 +413,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				21C069401C04331600BD92CC /* PBXTargetDependency */,
 				211216A51AE68E10004E1CE6 /* PBXTargetDependency */,
 			);
 			name = "Crypto-OSX";
@@ -356,6 +475,60 @@
 			productReference = 216CAE341AE6B273009A69EF /* CommonCrypto.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		21C069171C04315600BD92CC /* Zlib-OSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C0691C1C04315600BD92CC /* Build configuration list for PBXNativeTarget "Zlib-OSX" */;
+			buildPhases = (
+				21C069181C04315600BD92CC /* Sources */,
+				21C069191C04315600BD92CC /* Frameworks */,
+				21C0691A1C04315600BD92CC /* Headers */,
+				21C0691B1C04315600BD92CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zlib-OSX";
+			productName = CommonCrypto;
+			productReference = 21C0691F1C04315600BD92CC /* Zlib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		21C0692B1C0431A700BD92CC /* Zlib-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C069301C0431A700BD92CC /* Build configuration list for PBXNativeTarget "Zlib-iOS" */;
+			buildPhases = (
+				21C0692C1C0431A700BD92CC /* Sources */,
+				21C0692D1C0431A700BD92CC /* Frameworks */,
+				21C0692E1C0431A700BD92CC /* Headers */,
+				21C0692F1C0431A700BD92CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zlib-iOS";
+			productName = "CommonCrypto-iOS";
+			productReference = 21C069331C0431A700BD92CC /* Zlib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		21C069351C0431CF00BD92CC /* Zlib-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21C0693A1C0431CF00BD92CC /* Build configuration list for PBXNativeTarget "Zlib-watchOS" */;
+			buildPhases = (
+				21C069361C0431CF00BD92CC /* Sources */,
+				21C069371C0431CF00BD92CC /* Frameworks */,
+				21C069381C0431CF00BD92CC /* Headers */,
+				21C069391C0431CF00BD92CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zlib-watchOS";
+			productName = CommonCrypto;
+			productReference = 21C0693D1C0431CF00BD92CC /* Zlib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		21FD8C5A1AE6B03F008DCDBA /* Crypto-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21FD8C721AE6B03F008DCDBA /* Build configuration list for PBXNativeTarget "Crypto-iOS" */;
@@ -368,6 +541,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				21C069431C04338C00BD92CC /* PBXTargetDependency */,
 				216CAE4E1AE6B2AD009A69EF /* PBXTargetDependency */,
 			);
 			name = "Crypto-iOS";
@@ -423,6 +597,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				21C069481C04339E00BD92CC /* PBXTargetDependency */,
+				21C069461C04339C00BD92CC /* PBXTargetDependency */,
 			);
 			name = "Crypto-watchOS";
 			productName = "Crypto-watchOS";
@@ -478,12 +654,15 @@
 			projectRoot = "";
 			targets = (
 				211216821AE68D26004E1CE6 /* CommonCrypto-OSX */,
+				21C069171C04315600BD92CC /* Zlib-OSX */,
 				2112163C1AE68AD2004E1CE6 /* Crypto-OSX */,
 				211216471AE68AD3004E1CE6 /* CryptoTests-OSX */,
 				216CAE331AE6B273009A69EF /* CommonCrypto-iOS */,
+				21C0692B1C0431A700BD92CC /* Zlib-iOS */,
 				21FD8C5A1AE6B03F008DCDBA /* Crypto-iOS */,
 				21FD8C641AE6B03F008DCDBA /* CryptoTests-iOS */,
 				804503271BA209F6002A5470 /* CommonCrypto-watchOS */,
+				21C069351C0431CF00BD92CC /* Zlib-watchOS */,
 				804503361BA20F37002A5470 /* Crypto-watchOS */,
 			);
 		};
@@ -508,10 +687,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C069291C04317E00BD92CC /* Info.plist in Resources */,
+				21C0692A1C04317E00BD92CC /* Zlib.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		216CAE321AE6B273009A69EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C0691B1C04315600BD92CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C0692F1C0431A700BD92CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C069391C0431CF00BD92CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -580,6 +782,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21C069181C04315600BD92CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C0692C1C0431A700BD92CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21C069361C0431CF00BD92CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		21FD8C561AE6B03F008DCDBA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -630,6 +853,26 @@
 			isa = PBXTargetDependency;
 			target = 216CAE331AE6B273009A69EF /* CommonCrypto-iOS */;
 			targetProxy = 216CAE4D1AE6B2AD009A69EF /* PBXContainerItemProxy */;
+		};
+		21C069401C04331600BD92CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21C069171C04315600BD92CC /* Zlib-OSX */;
+			targetProxy = 21C0693F1C04331600BD92CC /* PBXContainerItemProxy */;
+		};
+		21C069431C04338C00BD92CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21C0692B1C0431A700BD92CC /* Zlib-iOS */;
+			targetProxy = 21C069421C04338C00BD92CC /* PBXContainerItemProxy */;
+		};
+		21C069461C04339C00BD92CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 804503271BA209F6002A5470 /* CommonCrypto-watchOS */;
+			targetProxy = 21C069451C04339C00BD92CC /* PBXContainerItemProxy */;
+		};
+		21C069481C04339E00BD92CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21C069351C0431CF00BD92CC /* Zlib-watchOS */;
+			targetProxy = 21C069471C04339E00BD92CC /* PBXContainerItemProxy */;
 		};
 		21FD8C681AE6B03F008DCDBA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -733,6 +976,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -759,6 +1003,7 @@
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -820,6 +1065,7 @@
 			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -845,6 +1091,7 @@
 			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -866,7 +1113,7 @@
 			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -892,7 +1139,7 @@
 			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -909,11 +1156,149 @@
 			};
 			name = Release;
 		};
+		21C0691D1C04315600BD92CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C069281C04317E00BD92CC /* Zlib.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Zlib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.zlib;
+				PRODUCT_NAME = Zlib;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		21C0691E1C04315600BD92CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C069281C04317E00BD92CC /* Zlib.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = Zlib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.zlib;
+				PRODUCT_NAME = Zlib;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		21C069311C0431A700BD92CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C069281C04317E00BD92CC /* Zlib.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Zlib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.zlib;
+				PRODUCT_NAME = Zlib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21C069321C0431A700BD92CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C069281C04317E00BD92CC /* Zlib.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Zlib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.zlib;
+				PRODUCT_NAME = Zlib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21C0693B1C0431CF00BD92CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C069281C04317E00BD92CC /* Zlib.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Zlib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.zlib;
+				PRODUCT_NAME = Zlib;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		21C0693C1C0431CF00BD92CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C069281C04317E00BD92CC /* Zlib.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Zlib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.zlib;
+				PRODUCT_NAME = Zlib;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		21FD8C6E1AE6B03F008DCDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -942,7 +1327,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -1139,6 +1524,33 @@
 			buildConfigurations = (
 				216CAE481AE6B273009A69EF /* Debug */,
 				216CAE491AE6B273009A69EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C0691C1C04315600BD92CC /* Build configuration list for PBXNativeTarget "Zlib-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C0691D1C04315600BD92CC /* Debug */,
+				21C0691E1C04315600BD92CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C069301C0431A700BD92CC /* Build configuration list for PBXNativeTarget "Zlib-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C069311C0431A700BD92CC /* Debug */,
+				21C069321C0431A700BD92CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21C0693A1C0431CF00BD92CC /* Build configuration list for PBXNativeTarget "Zlib-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21C0693B1C0431CF00BD92CC /* Debug */,
+				21C0693C1C0431CF00BD92CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

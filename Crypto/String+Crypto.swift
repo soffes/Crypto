@@ -45,12 +45,17 @@ extension String {
 		return String(digestData: hashData?.SHA512, length: CC_SHA512_DIGEST_LENGTH)
 	}
 
+	public var CRC32: Int? {
+		return hashData?.CRC32
+	}
+
 
 	// MARK: - Private
 
 	private var hashData: NSData? {
-		guard let cstr = cStringUsingEncoding(NSUTF8StringEncoding) else { return nil }
-		return NSData(bytes: cstr, length: lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
+		return dataUsingEncoding(NSUTF8StringEncoding)
+//		guard let cstr = cStringUsingEncoding(NSUTF8StringEncoding) else { return nil }
+//		return NSData(bytes: cstr, length: lengthOfBytesUsingEncoding(NSUTF8StringEncoding))
 	}
 
 	private init?(digestData: NSData?, length: Int32) {
