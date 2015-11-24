@@ -15,7 +15,6 @@
 		211216AA1AE68E39004E1CE6 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211216831AE68D26004E1CE6 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		216CAE4F1AE6B2B3009A69EF /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216CAE341AE6B273009A69EF /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		21C069291C04317E00BD92CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21C069221C04317E00BD92CC /* Info.plist */; };
-		21C0692A1C04317E00BD92CC /* Zlib.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 21C069281C04317E00BD92CC /* Zlib.xcconfig */; };
 		21C069411C04331C00BD92CC /* Zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0691F1C04315600BD92CC /* Zlib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		21C069441C04339000BD92CC /* Zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C069331C0431A700BD92CC /* Zlib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		21C069491C0433A100BD92CC /* Zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0693D1C0431CF00BD92CC /* Zlib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -612,7 +611,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Sam Soffes";
 				TargetAttributes = {
 					2112163C1AE68AD2004E1CE6 = {
@@ -688,7 +687,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				21C069291C04317E00BD92CC /* Info.plist in Resources */,
-				21C0692A1C04317E00BD92CC /* Zlib.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
