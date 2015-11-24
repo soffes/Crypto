@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "21C069351C0431CF00BD92CC"
-               BuildableName = "Zlib-watchOS.framework"
+               BuildableName = "Zlib.framework"
                BlueprintName = "Zlib-watchOS"
                ReferencedContainer = "container:Crypto.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21C069351C0431CF00BD92CC"
-            BuildableName = "Zlib-watchOS.framework"
+            BuildableName = "Zlib.framework"
             BlueprintName = "Zlib-watchOS"
             ReferencedContainer = "container:Crypto.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "21C069351C0431CF00BD92CC"
-            BuildableName = "Zlib-watchOS.framework"
+            BuildableName = "Zlib.framework"
             BlueprintName = "Zlib-watchOS"
             ReferencedContainer = "container:Crypto.xcodeproj">
          </BuildableReference>
