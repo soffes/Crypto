@@ -13,6 +13,10 @@
 		2112167B1AE68C18004E1CE6 /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
 		2112167D1AE68C22004E1CE6 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		211216AA1AE68E39004E1CE6 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 211216831AE68D26004E1CE6 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		211227B01C137AD80042D93A /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Cryptor.swift */; };
+		211227B11C137AD80042D93A /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Cryptor.swift */; };
+		211227B21C137AD80042D93A /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Cryptor.swift */; };
+		211227B31C137AD80042D93A /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Cryptor.swift */; };
 		216CAE4F1AE6B2B3009A69EF /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 216CAE341AE6B273009A69EF /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		21C0694B1C04357600BD92CC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0694A1C04357600BD92CC /* libz.tbd */; };
 		21C0694D1C04358F00BD92CC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C0694C1C04358F00BD92CC /* libz.tbd */; };
@@ -96,6 +100,7 @@
 		2112169E1AE68DD9004E1CE6 /* iphonesimulator.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = iphonesimulator.modulemap; sourceTree = "<group>"; };
 		2112169F1AE68DD9004E1CE6 /* macosx.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = macosx.modulemap; sourceTree = "<group>"; };
 		211216A61AE68E17004E1CE6 /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = usr/lib/system/libcommonCrypto.dylib; sourceTree = SDKROOT; };
+		211227AF1C137AD80042D93A /* Cryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cryptor.swift; sourceTree = "<group>"; };
 		216CAE341AE6B273009A69EF /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21C0694A1C04357600BD92CC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		21C0694C1C04358F00BD92CC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
@@ -240,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				211216421AE68AD2004E1CE6 /* Crypto.h */,
+				211227AF1C137AD80042D93A /* Cryptor.swift */,
 				2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */,
 				2112167C1AE68C22004E1CE6 /* String+Crypto.swift */,
 				211216401AE68AD2004E1CE6 /* Supporting Files */,
@@ -727,6 +733,7 @@
 			files = (
 				2112167B1AE68C18004E1CE6 /* NSData+Crypto.swift in Sources */,
 				2112167D1AE68C22004E1CE6 /* String+Crypto.swift in Sources */,
+				211227B01C137AD80042D93A /* Cryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +765,7 @@
 			files = (
 				21FD8C751AE6B07D008DCDBA /* String+Crypto.swift in Sources */,
 				21FD8C741AE6B07D008DCDBA /* NSData+Crypto.swift in Sources */,
+				211227B11C137AD80042D93A /* Cryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -782,6 +790,7 @@
 			files = (
 				80098A861C12E9330029C530 /* NSData+Crypto.swift in Sources */,
 				80098A871C12E9330029C530 /* String+Crypto.swift in Sources */,
+				211227B31C137AD80042D93A /* Cryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,6 +815,7 @@
 			files = (
 				804503401BA21029002A5470 /* NSData+Crypto.swift in Sources */,
 				804503411BA2102D002A5470 /* String+Crypto.swift in Sources */,
+				211227B21C137AD80042D93A /* Cryptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
