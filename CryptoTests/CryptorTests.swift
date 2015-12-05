@@ -1,5 +1,5 @@
 //
-//  CryptoTests.swift
+//  CryptorTests.swift
 //  CryptoTests
 //
 //  Created by Sam Soffes on 4/21/15.
@@ -9,7 +9,7 @@
 import XCTest
 import Crypto
 
-class CryptoTests: XCTestCase {
+class CryptorTests: XCTestCase {
 	func testMD2() {
 		XCTAssertEqual("3b68484d8f4aa7471d4d7a4f3a3650f9", "sam".MD2)
 	}
