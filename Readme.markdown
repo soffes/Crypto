@@ -18,9 +18,9 @@ github "soffes/Crypto"
 
 ## Documentation
 
-Currently, only hashing and HMAC are supported.
+Currently, only digest and HMAC are supported.
 
-### Hashing
+### Digest
 
 There are extensions for `NSData` and `String` for convenience:
 
@@ -33,10 +33,10 @@ data.SHA1  // <NSData …>
 
 MD2, MD4, MD5, SHA1, SHA224, SHA256, SHA384, SHA512 are available.
 
-You can also use `Cryptor` directly:
+You can also use `Digest` directly:
 
 ```swift
-Cryptor.MD5(bytes: data.bytes, length: data.length) // [UInt8]
+Digest.MD5(bytes: data.bytes, length: data.length) // [UInt8]
 ```
 
 ### HMAC
@@ -61,3 +61,36 @@ import CommonCrypto
 ```
 
 If you want to use `CommonCrypto` in your own project and don't care about my helper extensions, this is still the easiest way to use it. You can just include the `CommonCrypto` framework and not the `Crypto` framework to just use the wrapper.
+
+
+## Roadmap
+
+This is a work in progress.
+
+- [ ] Cryptor
+    - [ ] AES128
+    - [ ] DES
+    - [ ] 3DES
+    - [ ] CAST
+    - [ ] RC4
+    - [ ] RC2
+    - [ ] Blowfish
+- [x] Digest
+    - [x] MD2
+    - [x] MD4
+    - [x] MD5
+    - [x] SHA1
+    - [x] SHA224
+    - [x] SHA256
+    - [x] SHA384
+    - [x] SHA512
+- [x] HMAC
+    - [x] MD5
+    - [x] SHA1
+    - [x] SHA224
+    - [x] SHA256
+    - [x] SHA384
+    - [x] SHA512
+- [ ] Key Derivation
+- [ ] Random
+- [ ] Symmetric Key Wrap
