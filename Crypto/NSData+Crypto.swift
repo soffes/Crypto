@@ -8,7 +8,6 @@
 
 import Foundation
 import CommonCrypto
-import Zlib
 
 extension NSData {
 
@@ -60,12 +59,5 @@ extension NSData {
 		var hash = [UInt8](count: Int(CC_SHA512_DIGEST_LENGTH), repeatedValue: 0)
 		CC_SHA512(bytes, CC_LONG(length), &hash)
 		return NSData(bytes: hash, length: Int(CC_SHA512_DIGEST_LENGTH))
-	}
-
-	// public func crc32(crc: uLong, _ buf: UnsafePointer<Bytef>, _ len: uInt) -> uLong
-
-	public var CRC32: Int {
-		let buffer = UnsafePointer<Bytef>(bytes)
-		return Int(crc32(0, buffer, uInt(length)))
 	}
 }

@@ -45,16 +45,14 @@ string.SHA224 // "3e158867fde8c88755ad7d28ac2525c612df7957efb527783ca41328"
 string.SHA256 // "e96e02d8e47f2a7c03be5117b3ed175c52aa30fb22028cf9c96f261563577605"
 string.SHA384 // "f43211f34235f416ed799126e46ff3b77155acff484eec2bbe93e081082a30e3dd7462217470747fdc8bc4fb9facf205"
 string.SHA512 // "aa9a88785afb81fcb66da5b86d0aaf543dd883c8cf1e74f2f42c62195006606c69613170d56d2ecb8db6fb03f5acb6bdd0ffaf54bdf788854ddafc6becfdf3c7"
-string.CRC32  // 3860023320
 ```
 
 ## CommonCrypto & Zlib
 
-It's worth noting, you can't directly use `CommonCrypto` & `Zlib` in Swift since Apple doesn't define a module for it. In the project, there are `CommonCrypto` & `Zlib` frameworks that wraps the libraries. This makes importing it into Swift as simple as
+It's worth noting, you can't directly use `CommonCrypto` in Swift since Apple doesn't define a module for it. In the project, there are `CommonCrypto` framework that wraps the libraries. This makes importing it into Swift as simple as
 
 ``` swift
 import CommonCrypto
-import Zlib
 ```
 
-If you want to use `CommonCrypto` or `Zlib` in your own project and don't care about my helper extensions, this is still the easiest way to use it. You can just include the `CommonCrypto` or `Zlib` framework and not the `Crypto` framework to just use the wrapper.
+If you want to use `CommonCrypto` in your own project and don't care about my helper extensions, this is still the easiest way to use it. You can just include the `CommonCrypto` framework and not the `Crypto` framework to just use the wrapper.

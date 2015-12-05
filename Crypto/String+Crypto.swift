@@ -45,10 +45,6 @@ extension String {
 		return String(digestData: hashData?.SHA512, length: CC_SHA512_DIGEST_LENGTH)
 	}
 
-	public var CRC32: Int? {
-		return hashData?.CRC32
-	}
-
 
 	// MARK: - Private
 

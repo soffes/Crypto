@@ -1,4 +1,0 @@
-module Zlib [system] {
-    header "/Applications/Xcode.app/Contents/Developer/Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS.sdk/usr/include/zlib.h"
-    export *
-}

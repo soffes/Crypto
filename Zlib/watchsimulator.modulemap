@@ -1,4 +1,0 @@
-module Zlib [system] {
-    header "/Applications/Xcode.app/Contents/Developer/Platforms/WatchSimulator.platform/Developer/SDKs/WatchSimulator.sdk/usr/include/zlib.h"
-    export *
-}

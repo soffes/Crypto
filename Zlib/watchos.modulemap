@@ -1,4 +1,0 @@
-module Zlib [system] {
-    header "/Applications/Xcode.app/Contents/Developer/Platforms/WatchOS.platform/Developer/SDKs/WatchOS.sdk/usr/include/zlib.h"
-    export *
-}
