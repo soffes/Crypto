@@ -26,6 +26,14 @@
 		21FD8C751AE6B07D008DCDBA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		21FD8C761AE6B080008DCDBA /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21FD8C771AE6B088008DCDBA /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* CryptoTests.swift */; };
+		80098A791C12E87D0029C530 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80098A6F1C12E87D0029C530 /* Crypto.framework */; };
+		80098A861C12E9330029C530 /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
+		80098A871C12E9330029C530 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
+		80098A881C12E9370029C530 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80098A891C12E9530029C530 /* Zlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80098A601C12E76E0029C530 /* Zlib.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		80098A8A1C12E9560029C530 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80098A511C12E5890029C530 /* CommonCrypto.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		80098A8C1C12EBCC0029C530 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 80098A8B1C12EBCC0029C530 /* libz.tbd */; };
+		80098A8D1C12EC340029C530 /* CryptoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* CryptoTests.swift */; };
 		8045033F1BA2101C002A5470 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		804503401BA21029002A5470 /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
 		804503411BA2102D002A5470 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
@@ -89,6 +97,13 @@
 			remoteGlobalIDString = 21FD8C5A1AE6B03F008DCDBA;
 			remoteInfo = "Crypto-iOS";
 		};
+		80098A7A1C12E87D0029C530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 211216341AE68AD2004E1CE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80098A6E1C12E87D0029C530;
+			remoteInfo = "Crypto-tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -124,6 +139,15 @@
 		21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD8C7A1AE6B11A008DCDBA /* libcommonCrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcommonCrypto.dylib; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/usr/lib/system/libcommonCrypto.dylib; sourceTree = DEVELOPER_DIR; };
+		80098A511C12E5890029C530 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80098A591C12E6370029C530 /* appletvos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = appletvos.modulemap; sourceTree = "<group>"; };
+		80098A5A1C12E6880029C530 /* appletvsimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = appletvsimulator.modulemap; sourceTree = "<group>"; };
+		80098A601C12E76E0029C530 /* Zlib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zlib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80098A681C12E7D80029C530 /* appletvos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = appletvos.modulemap; sourceTree = "<group>"; };
+		80098A691C12E8050029C530 /* appletvsimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = appletvsimulator.modulemap; sourceTree = "<group>"; };
+		80098A6F1C12E87D0029C530 /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80098A781C12E87D0029C530 /* CryptoTests-tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80098A8B1C12EBCC0029C530 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS9.0.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		804503281BA209F6002A5470 /* CommonCrypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CommonCrypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		804503301BA20BD0002A5470 /* watchos.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = watchos.modulemap; sourceTree = "<group>"; };
 		804503311BA20C1A002A5470 /* watchsimulator.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = watchsimulator.modulemap; sourceTree = "<group>"; };
@@ -202,6 +226,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		80098A4D1C12E5890029C530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A5C1C12E76E0029C530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A6B1C12E87D0029C530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80098A8C1C12EBCC0029C530 /* libz.tbd in Frameworks */,
+				80098A8A1C12E9560029C530 /* CommonCrypto.framework in Frameworks */,
+				80098A891C12E9530029C530 /* Zlib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A751C12E87D0029C530 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80098A791C12E87D0029C530 /* Crypto.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		804503241BA209F6002A5470 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -248,6 +304,10 @@
 				21C0691F1C04315600BD92CC /* Zlib.framework */,
 				21C069331C0431A700BD92CC /* Zlib.framework */,
 				21C0693D1C0431CF00BD92CC /* Zlib.framework */,
+				80098A511C12E5890029C530 /* CommonCrypto.framework */,
+				80098A601C12E76E0029C530 /* Zlib.framework */,
+				80098A6F1C12E87D0029C530 /* Crypto.framework */,
+				80098A781C12E87D0029C530 /* CryptoTests-tvOS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,6 +358,8 @@
 				2112169F1AE68DD9004E1CE6 /* macosx.modulemap */,
 				804503301BA20BD0002A5470 /* watchos.modulemap */,
 				804503311BA20C1A002A5470 /* watchsimulator.modulemap */,
+				80098A591C12E6370029C530 /* appletvos.modulemap */,
+				80098A5A1C12E6880029C530 /* appletvsimulator.modulemap */,
 			);
 			path = CommonCrypto;
 			sourceTree = "<group>";
@@ -305,6 +367,7 @@
 		211216AB1AE68E43004E1CE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				80098A8B1C12EBCC0029C530 /* libz.tbd */,
 				21C0694E1C04359500BD92CC /* libz.tbd */,
 				21C0694C1C04358F00BD92CC /* libz.tbd */,
 				21C0694A1C04357600BD92CC /* libz.tbd */,
@@ -323,6 +386,8 @@
 				21C069251C04317E00BD92CC /* macosx.modulemap */,
 				21C069261C04317E00BD92CC /* watchos.modulemap */,
 				21C069271C04317E00BD92CC /* watchsimulator.modulemap */,
+				80098A681C12E7D80029C530 /* appletvos.modulemap */,
+				80098A691C12E8050029C530 /* appletvsimulator.modulemap */,
 				21C069281C04317E00BD92CC /* Zlib.xcconfig */,
 			);
 			path = Zlib;
@@ -379,6 +444,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				21FD8C761AE6B080008DCDBA /* Crypto.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A4E1C12E5890029C530 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A5D1C12E76E0029C530 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A6C1C12E87D0029C530 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80098A881C12E9370029C530 /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -566,6 +653,78 @@
 			productReference = 21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		80098A501C12E5890029C530 /* CommonCrypto-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80098A581C12E5890029C530 /* Build configuration list for PBXNativeTarget "CommonCrypto-tvOS" */;
+			buildPhases = (
+				80098A4C1C12E5890029C530 /* Sources */,
+				80098A4D1C12E5890029C530 /* Frameworks */,
+				80098A4E1C12E5890029C530 /* Headers */,
+				80098A4F1C12E5890029C530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CommonCrypto-tvOS";
+			productName = "CommonCrypto-tvOS";
+			productReference = 80098A511C12E5890029C530 /* CommonCrypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80098A5F1C12E76E0029C530 /* Zlib-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80098A651C12E76E0029C530 /* Build configuration list for PBXNativeTarget "Zlib-tvOS" */;
+			buildPhases = (
+				80098A5B1C12E76E0029C530 /* Sources */,
+				80098A5C1C12E76E0029C530 /* Frameworks */,
+				80098A5D1C12E76E0029C530 /* Headers */,
+				80098A5E1C12E76E0029C530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zlib-tvOS";
+			productName = "Zlib-tvOS";
+			productReference = 80098A601C12E76E0029C530 /* Zlib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80098A6E1C12E87D0029C530 /* Crypto-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80098A801C12E87D0029C530 /* Build configuration list for PBXNativeTarget "Crypto-tvOS" */;
+			buildPhases = (
+				80098A6A1C12E87D0029C530 /* Sources */,
+				80098A6B1C12E87D0029C530 /* Frameworks */,
+				80098A6C1C12E87D0029C530 /* Headers */,
+				80098A6D1C12E87D0029C530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Crypto-tvOS";
+			productName = "Crypto-tvOS";
+			productReference = 80098A6F1C12E87D0029C530 /* Crypto.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80098A771C12E87D0029C530 /* CryptoTests-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80098A831C12E87D0029C530 /* Build configuration list for PBXNativeTarget "CryptoTests-tvOS" */;
+			buildPhases = (
+				80098A741C12E87D0029C530 /* Sources */,
+				80098A751C12E87D0029C530 /* Frameworks */,
+				80098A761C12E87D0029C530 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80098A7B1C12E87D0029C530 /* PBXTargetDependency */,
+			);
+			name = "CryptoTests-tvOS";
+			productName = "Crypto-tvOSTests";
+			productReference = 80098A781C12E87D0029C530 /* CryptoTests-tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		804503271BA209F6002A5470 /* CommonCrypto-watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8045032F1BA209F6002A5470 /* Build configuration list for PBXNativeTarget "CommonCrypto-watchOS" */;
@@ -610,7 +769,7 @@
 		211216341AE68AD2004E1CE6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0700;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Sam Soffes";
 				TargetAttributes = {
@@ -631,6 +790,18 @@
 					};
 					21FD8C641AE6B03F008DCDBA = {
 						CreatedOnToolsVersion = 6.3;
+					};
+					80098A501C12E5890029C530 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					80098A5F1C12E76E0029C530 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					80098A6E1C12E87D0029C530 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					80098A771C12E87D0029C530 = {
+						CreatedOnToolsVersion = 7.1.1;
 					};
 					804503271BA209F6002A5470 = {
 						CreatedOnToolsVersion = 7.0;
@@ -663,6 +834,10 @@
 				804503271BA209F6002A5470 /* CommonCrypto-watchOS */,
 				21C069351C0431CF00BD92CC /* Zlib-watchOS */,
 				804503361BA20F37002A5470 /* Crypto-watchOS */,
+				80098A501C12E5890029C530 /* CommonCrypto-tvOS */,
+				80098A5F1C12E76E0029C530 /* Zlib-tvOS */,
+				80098A6E1C12E87D0029C530 /* Crypto-tvOS */,
+				80098A771C12E87D0029C530 /* CryptoTests-tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -726,6 +901,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		21FD8C631AE6B03F008DCDBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A4F1C12E5890029C530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A5E1C12E76E0029C530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A6D1C12E87D0029C530 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A761C12E87D0029C530 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -818,6 +1021,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		80098A4C1C12E5890029C530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A5B1C12E76E0029C530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A6A1C12E87D0029C530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80098A861C12E9330029C530 /* NSData+Crypto.swift in Sources */,
+				80098A871C12E9330029C530 /* String+Crypto.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80098A741C12E87D0029C530 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80098A8D1C12EC340029C530 /* CryptoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		804503231BA209F6002A5470 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -876,6 +1110,11 @@
 			isa = PBXTargetDependency;
 			target = 21FD8C5A1AE6B03F008DCDBA /* Crypto-iOS */;
 			targetProxy = 21FD8C671AE6B03F008DCDBA /* PBXContainerItemProxy */;
+		};
+		80098A7B1C12E87D0029C530 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80098A6E1C12E87D0029C530 /* Crypto-tvOS */;
+			targetProxy = 80098A7A1C12E87D0029C530 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1384,6 +1623,162 @@
 			};
 			name = Release;
 		};
+		80098A561C12E5890029C530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		80098A571C12E5890029C530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CommonCrypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.commoncrypto;
+				PRODUCT_NAME = CommonCrypto;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80098A661C12E76E0029C530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C069281C04317E00BD92CC /* Zlib.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Zlib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.zlib;
+				PRODUCT_NAME = Zlib;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		80098A671C12E76E0029C530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C069281C04317E00BD92CC /* Zlib.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Zlib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.zlib;
+				PRODUCT_NAME = Zlib;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80098A811C12E87D0029C530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Crypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
+				PRODUCT_NAME = Crypto;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		80098A821C12E87D0029C530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Crypto/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
+				PRODUCT_NAME = Crypto;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80098A841C12E87D0029C530 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				INFOPLIST_FILE = CryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		80098A851C12E87D0029C530 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CryptoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		8045032D1BA209F6002A5470 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2112169C1AE68D66004E1CE6 /* CommonCrypto.xcconfig */;
@@ -1570,6 +1965,38 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		80098A581C12E5890029C530 /* Build configuration list for PBXNativeTarget "CommonCrypto-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80098A561C12E5890029C530 /* Debug */,
+				80098A571C12E5890029C530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80098A651C12E76E0029C530 /* Build configuration list for PBXNativeTarget "Zlib-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80098A661C12E76E0029C530 /* Debug */,
+				80098A671C12E76E0029C530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80098A801C12E87D0029C530 /* Build configuration list for PBXNativeTarget "Crypto-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80098A811C12E87D0029C530 /* Debug */,
+				80098A821C12E87D0029C530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		80098A831C12E87D0029C530 /* Build configuration list for PBXNativeTarget "CryptoTests-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80098A841C12E87D0029C530 /* Debug */,
+				80098A851C12E87D0029C530 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		8045032F1BA209F6002A5470 /* Build configuration list for PBXNativeTarget "CommonCrypto-watchOS" */ = {
 			isa = XCConfigurationList;

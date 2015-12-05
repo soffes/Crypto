@@ -11,3 +11,5 @@ MODULEMAP_FILE[sdk=iphonesimulator*] = $(SRCROOT)/Zlib/iphonesimulator.modulemap
 MODULEMAP_FILE[sdk=watchos*] = $(SRCROOT)/Zlib/watchos.modulemap
 MODULEMAP_FILE[sdk=watchsimulator*] = $(SRCROOT)/Zlib/watchsimulator.modulemap
 MODULEMAP_FILE[sdk=macosx*] = $(SRCROOT)/Zlib/macosx.modulemap
+MODULEMAP_FILE[sdk=appletvos*] = $(SRCROOT)/Zlib/appletvos.modulemap
+MODULEMAP_FILE[sdk=appletvsimulator*] = $(SRCROOT)/Zlib/appletvsimulator.modulemap
