@@ -68,29 +68,8 @@ If you want to use `CommonCrypto` in your own project and don't care about my he
 This is a work in progress.
 
 - [ ] Cryptor
-    - [ ] AES128
-    - [ ] DES
-    - [ ] 3DES
-    - [ ] CAST
-    - [ ] RC4
-    - [ ] RC2
-    - [ ] Blowfish
 - [x] Digest
-    - [x] MD2
-    - [x] MD4
-    - [x] MD5
-    - [x] SHA1
-    - [x] SHA224
-    - [x] SHA256
-    - [x] SHA384
-    - [x] SHA512
 - [x] HMAC
-    - [x] MD5
-    - [x] SHA1
-    - [x] SHA224
-    - [x] SHA256
-    - [x] SHA384
-    - [x] SHA512
 - [ ] Key Derivation
 - [ ] Random
 - [ ] Symmetric Key Wrap
