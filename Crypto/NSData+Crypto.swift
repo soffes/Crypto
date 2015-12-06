@@ -11,7 +11,7 @@ import CommonCrypto
 
 extension NSData {
 
-	// MARK: - Hashing
+	// MARK: - Digest
 
 	public var MD2: NSData {
 		let hash = Digest.MD2(bytes: bytes, length: UInt32(length))
@@ -51,5 +51,12 @@ extension NSData {
 	public var SHA512: NSData {
 		let hash = Digest.SHA512(bytes: bytes, length: UInt32(length))
 		return NSData(bytes: hash, length:  hash.count)
+	}
+
+
+	// MARK: - HMAC
+
+	public func HMAC(key key: NSData, algorithm: Crypto.HMAC.Algorithm) -> NSData {
+		return Crypto.HMAC.sign(data: self, algorithm: algorithm, key: key)
 	}
 }

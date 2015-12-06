@@ -11,7 +11,7 @@ import CommonCrypto
 
 extension String {
 
-	// MARK: - Hashing
+	// MARK: - Digest
 
 	public var MD2: String? {
 		return String(digestData: hashData?.MD2, length: CC_MD2_DIGEST_LENGTH)
@@ -43,6 +43,13 @@ extension String {
 
 	public var SHA512: String? {
 		return String(digestData: hashData?.SHA512, length: CC_SHA512_DIGEST_LENGTH)
+	}
+
+
+	// MARK: - HMAC
+
+	public func HMAC(key key: String, algorithm: Crypto.HMAC.Algorithm) -> String? {
+		return Crypto.HMAC.sign(message: self, algorithm: algorithm, key: key)
 	}
 
 
