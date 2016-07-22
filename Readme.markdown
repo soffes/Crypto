@@ -52,17 +52,6 @@ HMAC.sign(data: messageData, algorithm: .SHA1, key: keyData) // <NSData …>
 MD5, SHA1, SHA224, SHA256, SHA384, SHA512 are the available algorithms.
 
 
-## CommonCrypto
-
-It's worth noting, you can't directly use `CommonCrypto` in Swift since Apple doesn't define a module for it. In the project, there are `CommonCrypto` framework that wraps the libraries. This makes importing it into Swift as simple as
-
-``` swift
-import CommonCrypto
-```
-
-If you want to use `CommonCrypto` in your own project and don't care about my helper extensions, this is still the easiest way to use it. You can just include the `CommonCrypto` framework and not the `Crypto` framework to just use the wrapper.
-
-
 ## Roadmap
 
 This is a work in progress.
