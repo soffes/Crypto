@@ -4,6 +4,8 @@
 
 Simple CommonCrypto wrapper for Swift for OS X, iOS, watchOS, and tvOS with [Carthage](https://github.com/carthage/carthage) support.
 
+This library depends on [CommonCrypto](https://github.com/soffes/CommonCrypto) since you can't use it directly from Swift. If you don't my extensions and just want that made easy, use that library directly.
+
 Released under the [MIT license](LICENSE). Enjoy.
 
 
@@ -14,6 +16,8 @@ Released under the [MIT license](LICENSE). Enjoy.
 ``` ruby
 github "soffes/Crypto"
 ```
+
+Note: this library depends on [CommonCrypto](https://github.com/soffes/CommonCrypto), so you'll need to add both Crypto and CommonCrypto to your project.
 
 
 ## Documentation
