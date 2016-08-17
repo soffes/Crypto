@@ -27,8 +27,8 @@ There are extensions for `NSData` and `String` for convenience:
 ``` swift
 import Crypto
 
-"sam".SHA1 // "f16bed56189e249fe4ca8ed10a1ecae60e8ceac0"
-data.SHA1  // <NSData …>
+"sam".sha1 // "f16bed56189e249fe4ca8ed10a1ecae60e8ceac0"
+data.sha1  // <Data …>
 ```
 
 MD2, MD4, MD5, SHA1, SHA224, SHA256, SHA384, SHA512 are available.
@@ -36,7 +36,7 @@ MD2, MD4, MD5, SHA1, SHA224, SHA256, SHA384, SHA512 are available.
 You can also use `Digest` directly:
 
 ```swift
-Digest.MD5(bytes: data.bytes, length: data.length) // [UInt8]
+Digest.md5(bytes: data.bytes, length: data.length) // [UInt8]
 ```
 
 ### HMAC
@@ -44,9 +44,9 @@ Digest.MD5(bytes: data.bytes, length: data.length) // [UInt8]
 [HMAC](https://en.wikipedia.org/wiki/Hash-based_message_authentication_code) in CommonCrypto is also supported.
 
 ```swift
-HMAC.sign(message: "sam", algorithm: .SHA1, key: "secret") // 1a90fa4e73686dfca75f5411d9fb81951edf1292
+HMAC.sign(message: "sam", algorithm: .sha1, key: "secret") // 1a90fa4e73686dfca75f5411d9fb81951edf1292
 
-HMAC.sign(data: messageData, algorithm: .SHA1, key: keyData) // <NSData …>
+HMAC.sign(data: messageData, algorithm: .sha1, key: keyData) // <Data …>
 ```
 
 MD5, SHA1, SHA224, SHA256, SHA384, SHA512 are the available algorithms.
