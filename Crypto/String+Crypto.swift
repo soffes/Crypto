@@ -13,61 +13,49 @@ extension String {
 
 	// MARK: - Digest
 
-	public var MD2: String? {
-		return String(digestData: hashData?.MD2, length: CC_MD2_DIGEST_LENGTH)
+	public var md2: String? {
+		return hashData?.md2.hex
 	}
 
-	public var MD4: String? {
-		return String(digestData: hashData?.MD4, length: CC_MD4_DIGEST_LENGTH)
+	public var md4: String? {
+		return hashData?.md4.hex
 	}
 
-	public var MD5: String? {
-		return String(digestData: hashData?.MD5, length: CC_MD5_DIGEST_LENGTH)
+	public var md5: String? {
+		return hashData?.md5.hex
 	}
 	
-	public var SHA1: String? {
-		return String(digestData: hashData?.SHA1, length: CC_SHA1_DIGEST_LENGTH)
+	public var sha1: String? {
+		return hashData?.sha1.hex
 	}
 
-	public var SHA224: String? {
-		return String(digestData: hashData?.SHA224, length: CC_SHA224_DIGEST_LENGTH)
+	public var sha224: String? {
+		return hashData?.sha224.hex
 	}
 
-	public var SHA256: String? {
-		return String(digestData: hashData?.SHA256, length: CC_SHA256_DIGEST_LENGTH)
+	public var sha256: String? {
+		return hashData?.sha256.hex
 	}
 
-	public var SHA384: String? {
-		return String(digestData: hashData?.SHA384, length: CC_SHA384_DIGEST_LENGTH)
+	public var sha384: String? {
+		return hashData?.sha384.hex
 	}
 
-	public var SHA512: String? {
-		return String(digestData: hashData?.SHA512, length: CC_SHA512_DIGEST_LENGTH)
+	public var sha512: String? {
+		return hashData?.sha512.hex
 	}
 
 
 	// MARK: - HMAC
 
-	public func HMAC(key key: String, algorithm: Crypto.HMAC.Algorithm) -> String? {
+	public func hmac(key: String, algorithm: Crypto.HMAC.Algorithm) -> String? {
 		return Crypto.HMAC.sign(message: self, algorithm: algorithm, key: key)
 	}
 
 
 	// MARK: - Private
 
-	private var hashData: NSData? {
-		return dataUsingEncoding(NSUTF8StringEncoding)
-	}
-
-	private init?(digestData: NSData?, length: Int32) {
-		guard let digestData = digestData else { return nil }
-		var digest = [UInt8](count: Int(length), repeatedValue: 0)
-		digestData.getBytes(&digest, length: Int(length) * sizeof(UInt8))
-
-		var string = ""
-		for i in 0..<length {
-			string += String(format: "%02x", digest[Int(i)])
-		}
-		self.init(string)
+	private var hashData: Data? {
+		return data(using: .utf8)
 	}
 }
