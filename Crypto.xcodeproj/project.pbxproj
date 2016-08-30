@@ -109,7 +109,7 @@
 		2112163D1AE68AD2004E1CE6 /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		211216411AE68AD2004E1CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211216421AE68AD2004E1CE6 /* Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
-		211216481AE68AD3004E1CE6 /* CryptoTests-OSX.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-OSX.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		211216481AE68AD3004E1CE6 /* CryptoTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2112164E1AE68AD3004E1CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2112164F1AE68AD3004E1CE6 /* DigestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigestTests.swift; sourceTree = "<group>"; };
 		2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Crypto.swift"; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				2112163D1AE68AD2004E1CE6 /* Crypto.framework */,
-				211216481AE68AD3004E1CE6 /* CryptoTests-OSX.xctest */,
+				211216481AE68AD3004E1CE6 /* CryptoTests-macOS.xctest */,
 				21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */,
 				21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */,
 				804503371BA20F37002A5470 /* Crypto.framework */,
@@ -332,9 +332,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2112163C1AE68AD2004E1CE6 /* Crypto-OSX */ = {
+		2112163C1AE68AD2004E1CE6 /* Crypto-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 211216531AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "Crypto-OSX" */;
+			buildConfigurationList = 211216531AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "Crypto-macOS" */;
 			buildPhases = (
 				211216381AE68AD2004E1CE6 /* Sources */,
 				211216391AE68AD2004E1CE6 /* Frameworks */,
@@ -345,14 +345,14 @@
 			);
 			dependencies = (
 			);
-			name = "Crypto-OSX";
+			name = "Crypto-macOS";
 			productName = Crypto;
 			productReference = 2112163D1AE68AD2004E1CE6 /* Crypto.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		211216471AE68AD3004E1CE6 /* CryptoTests-OSX */ = {
+		211216471AE68AD3004E1CE6 /* CryptoTests-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 211216561AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "CryptoTests-OSX" */;
+			buildConfigurationList = 211216561AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "CryptoTests-macOS" */;
 			buildPhases = (
 				211216441AE68AD3004E1CE6 /* Sources */,
 				211216451AE68AD3004E1CE6 /* Frameworks */,
@@ -364,9 +364,9 @@
 			dependencies = (
 				2112164B1AE68AD3004E1CE6 /* PBXTargetDependency */,
 			);
-			name = "CryptoTests-OSX";
+			name = "CryptoTests-macOS";
 			productName = CryptoTests;
-			productReference = 211216481AE68AD3004E1CE6 /* CryptoTests-OSX.xctest */;
+			productReference = 211216481AE68AD3004E1CE6 /* CryptoTests-macOS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		21FD8C5A1AE6B03F008DCDBA /* Crypto-iOS */ = {
@@ -506,8 +506,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2112163C1AE68AD2004E1CE6 /* Crypto-OSX */,
-				211216471AE68AD3004E1CE6 /* CryptoTests-OSX */,
+				2112163C1AE68AD2004E1CE6 /* Crypto-macOS */,
+				211216471AE68AD3004E1CE6 /* CryptoTests-macOS */,
 				21FD8C5A1AE6B03F008DCDBA /* Crypto-iOS */,
 				21FD8C641AE6B03F008DCDBA /* CryptoTests-iOS */,
 				804503361BA20F37002A5470 /* Crypto-watchOS */,
@@ -646,7 +646,7 @@
 /* Begin PBXTargetDependency section */
 		2112164B1AE68AD3004E1CE6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2112163C1AE68AD2004E1CE6 /* Crypto-OSX */;
+			target = 2112163C1AE68AD2004E1CE6 /* Crypto-macOS */;
 			targetProxy = 2112164A1AE68AD3004E1CE6 /* PBXContainerItemProxy */;
 		};
 		21FD8C681AE6B03F008DCDBA /* PBXTargetDependency */ = {
@@ -1076,7 +1076,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		211216531AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "Crypto-OSX" */ = {
+		211216531AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "Crypto-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				211216541AE68AD3004E1CE6 /* Debug */,
@@ -1085,7 +1085,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		211216561AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "CryptoTests-OSX" */ = {
+		211216561AE68AD3004E1CE6 /* Build configuration list for PBXNativeTarget "CryptoTests-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				211216571AE68AD3004E1CE6 /* Debug */,
