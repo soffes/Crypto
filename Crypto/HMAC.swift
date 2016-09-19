@@ -14,32 +14,32 @@ public struct HMAC {
 	// MARK: - Types
 
 	public enum Algorithm {
-		case SHA1
-		case MD5
-		case SHA256
-		case SHA384
-		case SHA512
-		case SHA224
+		case sha1
+		case md5
+		case sha256
+		case sha384
+		case sha512
+		case sha224
 
 		public var algorithm: CCHmacAlgorithm {
 			switch self {
-			case .MD5: return CCHmacAlgorithm(kCCHmacAlgMD5)
-			case .SHA1: return CCHmacAlgorithm(kCCHmacAlgSHA1)
-			case .SHA224: return CCHmacAlgorithm(kCCHmacAlgSHA224)
-			case .SHA256: return CCHmacAlgorithm(kCCHmacAlgSHA256)
-			case .SHA384: return CCHmacAlgorithm(kCCHmacAlgSHA384)
-			case .SHA512: return CCHmacAlgorithm(kCCHmacAlgSHA512)
+			case .md5: return CCHmacAlgorithm(kCCHmacAlgMD5)
+			case .sha1: return CCHmacAlgorithm(kCCHmacAlgSHA1)
+			case .sha224: return CCHmacAlgorithm(kCCHmacAlgSHA224)
+			case .sha256: return CCHmacAlgorithm(kCCHmacAlgSHA256)
+			case .sha384: return CCHmacAlgorithm(kCCHmacAlgSHA384)
+			case .sha512: return CCHmacAlgorithm(kCCHmacAlgSHA512)
 			}
 		}
 
 		public var digestLength: Int {
 			switch self {
-			case .MD5: return Int(CC_MD5_DIGEST_LENGTH)
-			case .SHA1: return Int(CC_SHA1_DIGEST_LENGTH)
-			case .SHA224: return Int(CC_SHA224_DIGEST_LENGTH)
-			case .SHA256: return Int(CC_SHA256_DIGEST_LENGTH)
-			case .SHA384: return Int(CC_SHA384_DIGEST_LENGTH)
-			case .SHA512: return Int(CC_SHA512_DIGEST_LENGTH)
+			case .md5: return Int(CC_MD5_DIGEST_LENGTH)
+			case .sha1: return Int(CC_SHA1_DIGEST_LENGTH)
+			case .sha224: return Int(CC_SHA224_DIGEST_LENGTH)
+			case .sha256: return Int(CC_SHA256_DIGEST_LENGTH)
+			case .sha384: return Int(CC_SHA384_DIGEST_LENGTH)
+			case .sha512: return Int(CC_SHA512_DIGEST_LENGTH)
 			}
 		}
 	}
@@ -47,28 +47,23 @@ public struct HMAC {
 
 	// MARK: - Signing
 
-	public static func sign(data data: NSData, algorithm: Algorithm, key: NSData) -> NSData {
-		let signature = UnsafeMutablePointer<CUnsignedChar>.alloc(algorithm.digestLength)
-		CCHmac(algorithm.algorithm, key.bytes, key.length, data.bytes, data.length, signature)
+	public static func sign(data: Data, algorithm: Algorithm, key: Data) -> Data {
+		let signature = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: algorithm.digestLength)
 
-		return NSData(bytes: signature, length: algorithm.digestLength)
-	}
-
-	public static func sign(message message: String, algorithm: Algorithm, key: String) -> String? {
-		guard let messageData = message.dataUsingEncoding(NSUTF8StringEncoding),
-			keyData = key.dataUsingEncoding(NSUTF8StringEncoding)
-		else { return nil }
-
-		let data = sign(data: messageData, algorithm: algorithm, key: keyData)
-
-		var hash = ""
-		data.enumerateByteRangesUsingBlock { bytes, range, _ in
-			let pointer = UnsafeMutablePointer<CUnsignedChar>(bytes)
-			for i in range.location..<(range.location + range.length) {
-				hash += NSString(format: "%02x", pointer[i]) as String
+		data.withUnsafeBytes { dataBytes in
+			key.withUnsafeBytes { keyBytes in
+				CCHmac(algorithm.algorithm, keyBytes, key.count, dataBytes, data.count, signature)
 			}
 		}
-		return hash
 
+		return Data(bytes: signature, count: algorithm.digestLength)
+	}
+
+	public static func sign(message: String, algorithm: Algorithm, key: String) -> String? {
+		guard let messageData = message.data(using: .utf8),
+			let keyData = key.data(using: .utf8)
+		else { return nil }
+
+		return sign(data: messageData, algorithm: algorithm, key: keyData).hex
 	}
 }

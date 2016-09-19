@@ -10,16 +10,7 @@
 		211216431AE68AD2004E1CE6 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		211216491AE68AD3004E1CE6 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2112163D1AE68AD2004E1CE6 /* Crypto.framework */; };
 		211216501AE68AD3004E1CE6 /* DigestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* DigestTests.swift */; };
-		2112167B1AE68C18004E1CE6 /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
-		2112167D1AE68C22004E1CE6 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		211227B01C137AD80042D93A /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
-		211227B11C137AD80042D93A /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
-		211227B21C137AD80042D93A /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
-		211227B31C137AD80042D93A /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
-		211227B51C137DB60042D93A /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
-		211227B61C137DB60042D93A /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
-		211227B71C137DB60042D93A /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
-		211227B81C137DB60042D93A /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
 		211227BA1C13834E0042D93A /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B91C13834E0042D93A /* HMACTests.swift */; };
 		211227BB1C13834E0042D93A /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B91C13834E0042D93A /* HMACTests.swift */; };
 		211227BC1C13834E0042D93A /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B91C13834E0042D93A /* HMACTests.swift */; };
@@ -30,19 +21,28 @@
 		217C55731D42D2410064A2AD /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55691D42D1CF0064A2AD /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		217C55751D42D2550064A2AD /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55661D42D1C00064A2AD /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		217C55771D42D2680064A2AD /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217C556C1D42D1E10064A2AD /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		218E2D541D63F672000A60DB /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
+		218E2D551D63F780000A60DB /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */; };
+		218E2D561D63F91E000A60DB /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
+		218E2D571D63FBA3000A60DB /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
+		218E2D581D63FBA3000A60DB /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
+		218E2D591D63FBA3000A60DB /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */; };
+		218E2D5A1D63FBA3000A60DB /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
+		218E2D5B1D63FBA4000A60DB /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
+		218E2D5C1D63FBA4000A60DB /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
+		218E2D5D1D63FBA4000A60DB /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */; };
+		218E2D5E1D63FBA4000A60DB /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
+		218E2D5F1D63FBA4000A60DB /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
+		218E2D601D63FBA4000A60DB /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
+		218E2D611D63FBA4000A60DB /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */; };
+		218E2D621D63FBA4000A60DB /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		21FD8C661AE6B03F008DCDBA /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */; };
-		21FD8C741AE6B07D008DCDBA /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
-		21FD8C751AE6B07D008DCDBA /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		21FD8C761AE6B080008DCDBA /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		21FD8C771AE6B088008DCDBA /* DigestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* DigestTests.swift */; };
 		80098A791C12E87D0029C530 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80098A6F1C12E87D0029C530 /* Crypto.framework */; };
-		80098A861C12E9330029C530 /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
-		80098A871C12E9330029C530 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 		80098A881C12E9370029C530 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		80098A8D1C12EC340029C530 /* DigestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* DigestTests.swift */; };
 		8045033F1BA2101C002A5470 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		804503401BA21029002A5470 /* NSData+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */; };
-		804503411BA2102D002A5470 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,7 +112,7 @@
 		211216481AE68AD3004E1CE6 /* CryptoTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2112164E1AE68AD3004E1CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2112164F1AE68AD3004E1CE6 /* DigestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigestTests.swift; sourceTree = "<group>"; };
-		2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSData+Crypto.swift"; sourceTree = "<group>"; };
+		2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Crypto.swift"; sourceTree = "<group>"; };
 		2112167C1AE68C22004E1CE6 /* String+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
 		211227AF1C137AD80042D93A /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
 		211227B41C137DB60042D93A /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 				211216421AE68AD2004E1CE6 /* Crypto.h */,
 				211227AF1C137AD80042D93A /* Digest.swift */,
 				211227B41C137DB60042D93A /* HMAC.swift */,
-				2112167A1AE68C18004E1CE6 /* NSData+Crypto.swift */,
+				2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */,
 				2112167C1AE68C22004E1CE6 /* String+Crypto.swift */,
 				211216401AE68AD2004E1CE6 /* Supporting Files */,
 			);
@@ -576,10 +576,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2112167B1AE68C18004E1CE6 /* NSData+Crypto.swift in Sources */,
-				2112167D1AE68C22004E1CE6 /* String+Crypto.swift in Sources */,
-				211227B51C137DB60042D93A /* HMAC.swift in Sources */,
+				218E2D541D63F672000A60DB /* HMAC.swift in Sources */,
+				218E2D561D63F91E000A60DB /* String+Crypto.swift in Sources */,
 				211227B01C137AD80042D93A /* Digest.swift in Sources */,
+				218E2D551D63F780000A60DB /* Data+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,10 +596,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21FD8C751AE6B07D008DCDBA /* String+Crypto.swift in Sources */,
-				21FD8C741AE6B07D008DCDBA /* NSData+Crypto.swift in Sources */,
-				211227B61C137DB60042D93A /* HMAC.swift in Sources */,
-				211227B11C137AD80042D93A /* Digest.swift in Sources */,
+				218E2D581D63FBA3000A60DB /* HMAC.swift in Sources */,
+				218E2D5A1D63FBA3000A60DB /* String+Crypto.swift in Sources */,
+				218E2D571D63FBA3000A60DB /* Digest.swift in Sources */,
+				218E2D591D63FBA3000A60DB /* Data+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,10 +616,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80098A861C12E9330029C530 /* NSData+Crypto.swift in Sources */,
-				80098A871C12E9330029C530 /* String+Crypto.swift in Sources */,
-				211227B81C137DB60042D93A /* HMAC.swift in Sources */,
-				211227B31C137AD80042D93A /* Digest.swift in Sources */,
+				218E2D601D63FBA4000A60DB /* HMAC.swift in Sources */,
+				218E2D621D63FBA4000A60DB /* String+Crypto.swift in Sources */,
+				218E2D5F1D63FBA4000A60DB /* Digest.swift in Sources */,
+				218E2D611D63FBA4000A60DB /* Data+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,10 +636,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				804503401BA21029002A5470 /* NSData+Crypto.swift in Sources */,
-				804503411BA2102D002A5470 /* String+Crypto.swift in Sources */,
-				211227B71C137DB60042D93A /* HMAC.swift in Sources */,
-				211227B21C137AD80042D93A /* Digest.swift in Sources */,
+				218E2D5C1D63FBA4000A60DB /* HMAC.swift in Sources */,
+				218E2D5E1D63FBA4000A60DB /* String+Crypto.swift in Sources */,
+				218E2D5B1D63FBA4000A60DB /* Digest.swift in Sources */,
+				218E2D5D1D63FBA4000A60DB /* Data+Crypto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -708,7 +708,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -749,7 +749,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -901,6 +901,7 @@
 		21FD8C701AE6B03F008DCDBA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -923,6 +924,7 @@
 		21FD8C711AE6B03F008DCDBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -991,6 +993,7 @@
 		80098A841C12E87D0029C530 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = CryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1004,6 +1007,7 @@
 		80098A851C12E87D0029C530 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CryptoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
