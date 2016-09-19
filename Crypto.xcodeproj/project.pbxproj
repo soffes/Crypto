@@ -254,7 +254,7 @@
 		211216AB1AE68E43004E1CE6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				217C556B1D42D1D10064A2AD /* OS X */,
+				217C556B1D42D1D10064A2AD /* macOS */,
 				217C55681D42D1C50064A2AD /* iOS */,
 				217C55711D42D1EF0064A2AD /* watchOS */,
 				217C556E1D42D1E30064A2AD /* tvOS */,
@@ -270,12 +270,12 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		217C556B1D42D1D10064A2AD /* OS X */ = {
+		217C556B1D42D1D10064A2AD /* macOS */ = {
 			isa = PBXGroup;
 			children = (
 				217C55691D42D1CF0064A2AD /* CommonCrypto.framework */,
 			);
-			name = "OS X";
+			name = macOS;
 			sourceTree = "<group>";
 		};
 		217C556E1D42D1E30064A2AD /* tvOS */ = {
