@@ -8,6 +8,11 @@ This library depends on [CommonCrypto](https://github.com/soffes/CommonCrypto) s
 
 Released under the [MIT license](LICENSE). Enjoy.
 
+| Swift Version | Crypt Version |
+| ------------- | ------------- |
+| 2.3           | 0.4.1         |
+| 2.2           | 0.4.0         |
+
 
 ## Installation
 
