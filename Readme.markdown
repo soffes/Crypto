@@ -1,6 +1,8 @@
 # Crypto
 
-[![Version](https://img.shields.io/github/release/soffes/Crypto.svg)](https://github.com/soffes/Crypto/releases) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Version](https://img.shields.io/github/release/soffes/Crypto.svg)](https://github.com/soffes/Crypto/releases)
+![Swift Version](https://img.shields.io/badge/swift-3.0.1-orange.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Simple CommonCrypto wrapper for Swift for macOS, iOS, watchOS, and tvOS with [Carthage](https://github.com/carthage/carthage) support.
 
