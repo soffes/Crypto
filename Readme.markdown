@@ -12,6 +12,7 @@ Released under the [MIT license](LICENSE). Enjoy.
 
 | Swift Version | Crypto Version |
 | ------------- | -------------- |
+| 3.1           | 0.5.2          |
 | 3.0.1         | 0.5.1          |
 | 3.0           | 0.5.0          |
 | 2.3           | 0.4.1          |
