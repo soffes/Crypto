@@ -63,11 +63,21 @@ extension Data {
 
 	var hex: String {
 		var string = ""
-		enumerateBytes { pointer, index, _ in
-			for i in index..<pointer.count {
-				string += String(format: "%02x", pointer[i])
+
+		#if swift(>=3.1)
+			enumerateBytes { pointer, index, _ in
+				for i in index..<pointer.count {
+					string += String(format: "%02x", pointer[i])
+				}
 			}
-		}
+		#else
+			enumerateBytes { pointer, count, _ in
+				for i in 0..<count {
+					string += String(format: "%02x", pointer[i])
+				}
+			}
+		#endif
+
 		return string
 	}
 }
