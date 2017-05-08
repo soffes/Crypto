@@ -197,6 +197,7 @@
 				2112163E1AE68AD2004E1CE6 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		2112163E1AE68AD2004E1CE6 /* Products */ = {
 			isa = PBXGroup;
