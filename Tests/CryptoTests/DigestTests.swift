@@ -41,4 +41,15 @@ class DigestTests: XCTestCase {
 	func testSHA512() {
 		XCTAssertEqual("aa9a88785afb81fcb66da5b86d0aaf543dd883c8cf1e74f2f42c62195006606c69613170d56d2ecb8db6fb03f5acb6bdd0ffaf54bdf788854ddafc6becfdf3c7", "sam".sha512)
 	}
+
+	static var allTests = [
+		("testMD2", testMD2),
+		("testMD4", testMD4),
+		("testMD5", testMD5),
+		("testSHA1", testSHA1),
+		("testSHA224", testSHA224),
+		("testSHA256", testSHA256),
+		("testSHA384", testSHA384),
+		("testSHA512", testSHA512),
+    ]
 }

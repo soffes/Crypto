@@ -14,14 +14,19 @@ class HMACTests: XCTestCase {
 	let key = "secret"
 	let message = "sam"
 
+	func testMD5() {
+		let signature = HMAC.sign(message: message, algorithm: .md5, key: key)
+		XCTAssertEqual("0266f2e4980a1540f128da1d32166391", signature)
+	}
+
 	func testSHA1() {
 		let signature = HMAC.sign(message: message, algorithm: .sha1, key: key)
 		XCTAssertEqual("1a90fa4e73686dfca75f5411d9fb81951edf1292", signature)
 	}
 
-	func testMD5() {
-		let signature = HMAC.sign(message: message, algorithm: .md5, key: key)
-		XCTAssertEqual("0266f2e4980a1540f128da1d32166391", signature)
+	func testSHA224() {
+		let signature = HMAC.sign(message: message, algorithm: .sha224, key: key)
+		XCTAssertEqual("e9c2dc5a9fbd278db52e37a7cbfb9f2897774287daaa0bb33a4f98f5", signature)
 	}
 
 	func testSHA256() {
@@ -39,8 +44,12 @@ class HMACTests: XCTestCase {
 		XCTAssertEqual("4b49d3f9dfa51eaf638b85c2887875144ad5dafeacefdcc72bd73f19f2ae2a7ae182ee2e3f6684b7f042d8d122c4558b64be8b072ce9a69a1ceb96aa688cadfd", signature)
 	}
 
-	func testSHA224() {
-		let signature = HMAC.sign(message: message, algorithm: .sha224, key: key)
-		XCTAssertEqual("e9c2dc5a9fbd278db52e37a7cbfb9f2897774287daaa0bb33a4f98f5", signature)
-	}
+	static var allTests = [
+		("testMD5", testMD5),
+		("testSHA1", testSHA1),
+		("testSHA224", testSHA224),
+		("testSHA256", testSHA256),
+		("testSHA384", testSHA384),
+		("testSHA512", testSHA512),
+    ]
 }
