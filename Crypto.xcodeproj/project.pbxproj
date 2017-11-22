@@ -7,13 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		211216431AE68AD2004E1CE6 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		211216491AE68AD3004E1CE6 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2112163D1AE68AD2004E1CE6 /* Crypto.framework */; };
-		211216501AE68AD3004E1CE6 /* DigestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* DigestTests.swift */; };
-		211227B01C137AD80042D93A /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
-		211227BA1C13834E0042D93A /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B91C13834E0042D93A /* HMACTests.swift */; };
-		211227BB1C13834E0042D93A /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B91C13834E0042D93A /* HMACTests.swift */; };
-		211227BC1C13834E0042D93A /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B91C13834E0042D93A /* HMACTests.swift */; };
 		217C55671D42D1C00064A2AD /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55661D42D1C00064A2AD /* CommonCrypto.framework */; };
 		217C556A1D42D1CF0064A2AD /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55691D42D1CF0064A2AD /* CommonCrypto.framework */; };
 		217C556D1D42D1E10064A2AD /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C556C1D42D1E10064A2AD /* CommonCrypto.framework */; };
@@ -21,28 +15,36 @@
 		217C55731D42D2410064A2AD /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55691D42D1CF0064A2AD /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		217C55751D42D2550064A2AD /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55661D42D1C00064A2AD /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		217C55771D42D2680064A2AD /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217C556C1D42D1E10064A2AD /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		218E2D541D63F672000A60DB /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
-		218E2D551D63F780000A60DB /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */; };
-		218E2D561D63F91E000A60DB /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
-		218E2D571D63FBA3000A60DB /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
-		218E2D581D63FBA3000A60DB /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
-		218E2D591D63FBA3000A60DB /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */; };
-		218E2D5A1D63FBA3000A60DB /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
-		218E2D5B1D63FBA4000A60DB /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
-		218E2D5C1D63FBA4000A60DB /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
-		218E2D5D1D63FBA4000A60DB /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */; };
-		218E2D5E1D63FBA4000A60DB /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
-		218E2D5F1D63FBA4000A60DB /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227AF1C137AD80042D93A /* Digest.swift */; };
-		218E2D601D63FBA4000A60DB /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211227B41C137DB60042D93A /* HMAC.swift */; };
-		218E2D611D63FBA4000A60DB /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */; };
-		218E2D621D63FBA4000A60DB /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112167C1AE68C22004E1CE6 /* String+Crypto.swift */; };
+		219E0C651FC55E8100F80DF1 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C581FC55E8000F80DF1 /* HMAC.swift */; };
+		219E0C661FC55E8100F80DF1 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C591FC55E8000F80DF1 /* Digest.swift */; };
+		219E0C671FC55E8100F80DF1 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5A1FC55E8000F80DF1 /* String+Crypto.swift */; };
+		219E0C681FC55E8100F80DF1 /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5B1FC55E8000F80DF1 /* Data+Crypto.swift */; };
+		219E0C691FC55E8100F80DF1 /* Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 219E0C5D1FC55E8000F80DF1 /* Tests-Info.plist */; };
+		219E0C6A1FC55E8100F80DF1 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 219E0C5E1FC55E8000F80DF1 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		219E0C6B1FC55E8100F80DF1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 219E0C5F1FC55E8000F80DF1 /* Info.plist */; };
+		219E0C6F1FC55E8800F80DF1 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C581FC55E8000F80DF1 /* HMAC.swift */; };
+		219E0C701FC55E8800F80DF1 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C591FC55E8000F80DF1 /* Digest.swift */; };
+		219E0C711FC55E8800F80DF1 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5A1FC55E8000F80DF1 /* String+Crypto.swift */; };
+		219E0C721FC55E8800F80DF1 /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5B1FC55E8000F80DF1 /* Data+Crypto.swift */; };
+		219E0C731FC55E8900F80DF1 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C581FC55E8000F80DF1 /* HMAC.swift */; };
+		219E0C741FC55E8900F80DF1 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C591FC55E8000F80DF1 /* Digest.swift */; };
+		219E0C751FC55E8900F80DF1 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5A1FC55E8000F80DF1 /* String+Crypto.swift */; };
+		219E0C761FC55E8900F80DF1 /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5B1FC55E8000F80DF1 /* Data+Crypto.swift */; };
+		219E0C771FC55E8900F80DF1 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C581FC55E8000F80DF1 /* HMAC.swift */; };
+		219E0C781FC55E8900F80DF1 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C591FC55E8000F80DF1 /* Digest.swift */; };
+		219E0C791FC55E8900F80DF1 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5A1FC55E8000F80DF1 /* String+Crypto.swift */; };
+		219E0C7A1FC55E8900F80DF1 /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5B1FC55E8000F80DF1 /* Data+Crypto.swift */; };
+		219E0C7B1FC55E8D00F80DF1 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 219E0C5E1FC55E8000F80DF1 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		219E0C7C1FC55E8D00F80DF1 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 219E0C5E1FC55E8000F80DF1 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		219E0C7D1FC55E8E00F80DF1 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 219E0C5E1FC55E8000F80DF1 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		219E0C7E1FC55E9900F80DF1 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C631FC55E8000F80DF1 /* HMACTests.swift */; };
+		219E0C7F1FC55E9900F80DF1 /* DigestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C641FC55E8000F80DF1 /* DigestTests.swift */; };
+		219E0C801FC55E9900F80DF1 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C631FC55E8000F80DF1 /* HMACTests.swift */; };
+		219E0C811FC55E9900F80DF1 /* DigestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C641FC55E8000F80DF1 /* DigestTests.swift */; };
+		219E0C821FC55E9A00F80DF1 /* HMACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C631FC55E8000F80DF1 /* HMACTests.swift */; };
+		219E0C831FC55E9A00F80DF1 /* DigestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C641FC55E8000F80DF1 /* DigestTests.swift */; };
 		21FD8C661AE6B03F008DCDBA /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */; };
-		21FD8C761AE6B080008DCDBA /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		21FD8C771AE6B088008DCDBA /* DigestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* DigestTests.swift */; };
 		80098A791C12E87D0029C530 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80098A6F1C12E87D0029C530 /* Crypto.framework */; };
-		80098A881C12E9370029C530 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		80098A8D1C12EC340029C530 /* DigestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2112164F1AE68AD3004E1CE6 /* DigestTests.swift */; };
-		8045033F1BA2101C002A5470 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 211216421AE68AD2004E1CE6 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,20 +109,21 @@
 
 /* Begin PBXFileReference section */
 		2112163D1AE68AD2004E1CE6 /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		211216411AE68AD2004E1CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		211216421AE68AD2004E1CE6 /* Crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
 		211216481AE68AD3004E1CE6 /* CryptoTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2112164E1AE68AD3004E1CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2112164F1AE68AD3004E1CE6 /* DigestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigestTests.swift; sourceTree = "<group>"; };
-		2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Crypto.swift"; sourceTree = "<group>"; };
-		2112167C1AE68C22004E1CE6 /* String+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
-		211227AF1C137AD80042D93A /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
-		211227B41C137DB60042D93A /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
-		211227B91C13834E0042D93A /* HMACTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
 		217C55661D42D1C00064A2AD /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		217C55691D42D1CF0064A2AD /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/Mac/CommonCrypto.framework; sourceTree = "<group>"; };
 		217C556C1D42D1E10064A2AD /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/tvOS/CommonCrypto.framework; sourceTree = "<group>"; };
 		217C556F1D42D1ED0064A2AD /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/watchOS/CommonCrypto.framework; sourceTree = "<group>"; };
+		219E0C581FC55E8000F80DF1 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		219E0C591FC55E8000F80DF1 /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
+		219E0C5A1FC55E8000F80DF1 /* String+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Crypto.swift"; sourceTree = "<group>"; };
+		219E0C5B1FC55E8000F80DF1 /* Data+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Crypto.swift"; sourceTree = "<group>"; };
+		219E0C5D1FC55E8000F80DF1 /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		219E0C5E1FC55E8000F80DF1 /* Crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Crypto.h; sourceTree = "<group>"; };
+		219E0C5F1FC55E8000F80DF1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		219E0C611FC55E8000F80DF1 /* LinuxMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		219E0C631FC55E8000F80DF1 /* HMACTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMACTests.swift; sourceTree = "<group>"; };
+		219E0C641FC55E8000F80DF1 /* DigestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigestTests.swift; sourceTree = "<group>"; };
 		21FD8C5B1AE6B03F008DCDBA /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		21FD8C651AE6B03F008DCDBA /* CryptoTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CryptoTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80098A6F1C12E87D0029C530 /* Crypto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Crypto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -191,8 +194,9 @@
 		211216331AE68AD2004E1CE6 = {
 			isa = PBXGroup;
 			children = (
-				2112163F1AE68AD2004E1CE6 /* Crypto */,
-				2112164C1AE68AD3004E1CE6 /* CryptoTests */,
+				219E0C561FC55E8000F80DF1 /* Sources */,
+				219E0C5C1FC55E8000F80DF1 /* Support */,
+				219E0C601FC55E8000F80DF1 /* Tests */,
 				211216AB1AE68E43004E1CE6 /* Frameworks */,
 				2112163E1AE68AD2004E1CE6 /* Products */,
 			);
@@ -211,45 +215,6 @@
 				80098A781C12E87D0029C530 /* CryptoTests-tvOS.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		2112163F1AE68AD2004E1CE6 /* Crypto */ = {
-			isa = PBXGroup;
-			children = (
-				211216421AE68AD2004E1CE6 /* Crypto.h */,
-				211227AF1C137AD80042D93A /* Digest.swift */,
-				211227B41C137DB60042D93A /* HMAC.swift */,
-				2112167A1AE68C18004E1CE6 /* Data+Crypto.swift */,
-				2112167C1AE68C22004E1CE6 /* String+Crypto.swift */,
-				211216401AE68AD2004E1CE6 /* Supporting Files */,
-			);
-			path = Crypto;
-			sourceTree = "<group>";
-		};
-		211216401AE68AD2004E1CE6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				211216411AE68AD2004E1CE6 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2112164C1AE68AD3004E1CE6 /* CryptoTests */ = {
-			isa = PBXGroup;
-			children = (
-				2112164F1AE68AD3004E1CE6 /* DigestTests.swift */,
-				211227B91C13834E0042D93A /* HMACTests.swift */,
-				2112164D1AE68AD3004E1CE6 /* Supporting Files */,
-			);
-			path = CryptoTests;
-			sourceTree = "<group>";
-		};
-		2112164D1AE68AD3004E1CE6 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2112164E1AE68AD3004E1CE6 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		211216AB1AE68E43004E1CE6 /* Frameworks */ = {
@@ -295,6 +260,53 @@
 			name = watchOS;
 			sourceTree = "<group>";
 		};
+		219E0C561FC55E8000F80DF1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				219E0C571FC55E8000F80DF1 /* Crypto */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		219E0C571FC55E8000F80DF1 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				219E0C581FC55E8000F80DF1 /* HMAC.swift */,
+				219E0C591FC55E8000F80DF1 /* Digest.swift */,
+				219E0C5A1FC55E8000F80DF1 /* String+Crypto.swift */,
+				219E0C5B1FC55E8000F80DF1 /* Data+Crypto.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		219E0C5C1FC55E8000F80DF1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				219E0C5D1FC55E8000F80DF1 /* Tests-Info.plist */,
+				219E0C5E1FC55E8000F80DF1 /* Crypto.h */,
+				219E0C5F1FC55E8000F80DF1 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		219E0C601FC55E8000F80DF1 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				219E0C611FC55E8000F80DF1 /* LinuxMain.swift */,
+				219E0C621FC55E8000F80DF1 /* CryptoTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		219E0C621FC55E8000F80DF1 /* CryptoTests */ = {
+			isa = PBXGroup;
+			children = (
+				219E0C631FC55E8000F80DF1 /* HMACTests.swift */,
+				219E0C641FC55E8000F80DF1 /* DigestTests.swift */,
+			);
+			path = CryptoTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -302,7 +314,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211216431AE68AD2004E1CE6 /* Crypto.h in Headers */,
+				219E0C6A1FC55E8100F80DF1 /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +322,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21FD8C761AE6B080008DCDBA /* Crypto.h in Headers */,
+				219E0C7B1FC55E8D00F80DF1 /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +330,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80098A881C12E9370029C530 /* Crypto.h in Headers */,
+				219E0C7D1FC55E8E00F80DF1 /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +338,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8045033F1BA2101C002A5470 /* Crypto.h in Headers */,
+				219E0C7C1FC55E8D00F80DF1 /* Crypto.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -525,6 +537,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				219E0C6B1FC55E8100F80DF1 /* Info.plist in Resources */,
+				219E0C691FC55E8100F80DF1 /* Tests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,10 +591,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218E2D541D63F672000A60DB /* HMAC.swift in Sources */,
-				218E2D561D63F91E000A60DB /* String+Crypto.swift in Sources */,
-				211227B01C137AD80042D93A /* Digest.swift in Sources */,
-				218E2D551D63F780000A60DB /* Data+Crypto.swift in Sources */,
+				219E0C671FC55E8100F80DF1 /* String+Crypto.swift in Sources */,
+				219E0C651FC55E8100F80DF1 /* HMAC.swift in Sources */,
+				219E0C681FC55E8100F80DF1 /* Data+Crypto.swift in Sources */,
+				219E0C661FC55E8100F80DF1 /* Digest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,8 +602,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				211216501AE68AD3004E1CE6 /* DigestTests.swift in Sources */,
-				211227BA1C13834E0042D93A /* HMACTests.swift in Sources */,
+				219E0C821FC55E9A00F80DF1 /* HMACTests.swift in Sources */,
+				219E0C831FC55E9A00F80DF1 /* DigestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -597,10 +611,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218E2D581D63FBA3000A60DB /* HMAC.swift in Sources */,
-				218E2D5A1D63FBA3000A60DB /* String+Crypto.swift in Sources */,
-				218E2D571D63FBA3000A60DB /* Digest.swift in Sources */,
-				218E2D591D63FBA3000A60DB /* Data+Crypto.swift in Sources */,
+				219E0C711FC55E8800F80DF1 /* String+Crypto.swift in Sources */,
+				219E0C6F1FC55E8800F80DF1 /* HMAC.swift in Sources */,
+				219E0C721FC55E8800F80DF1 /* Data+Crypto.swift in Sources */,
+				219E0C701FC55E8800F80DF1 /* Digest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,8 +622,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21FD8C771AE6B088008DCDBA /* DigestTests.swift in Sources */,
-				211227BB1C13834E0042D93A /* HMACTests.swift in Sources */,
+				219E0C801FC55E9900F80DF1 /* HMACTests.swift in Sources */,
+				219E0C811FC55E9900F80DF1 /* DigestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,10 +631,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218E2D601D63FBA4000A60DB /* HMAC.swift in Sources */,
-				218E2D621D63FBA4000A60DB /* String+Crypto.swift in Sources */,
-				218E2D5F1D63FBA4000A60DB /* Digest.swift in Sources */,
-				218E2D611D63FBA4000A60DB /* Data+Crypto.swift in Sources */,
+				219E0C791FC55E8900F80DF1 /* String+Crypto.swift in Sources */,
+				219E0C771FC55E8900F80DF1 /* HMAC.swift in Sources */,
+				219E0C7A1FC55E8900F80DF1 /* Data+Crypto.swift in Sources */,
+				219E0C781FC55E8900F80DF1 /* Digest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,8 +642,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80098A8D1C12EC340029C530 /* DigestTests.swift in Sources */,
-				211227BC1C13834E0042D93A /* HMACTests.swift in Sources */,
+				219E0C7E1FC55E9900F80DF1 /* HMACTests.swift in Sources */,
+				219E0C7F1FC55E9900F80DF1 /* DigestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,10 +651,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				218E2D5C1D63FBA4000A60DB /* HMAC.swift in Sources */,
-				218E2D5E1D63FBA4000A60DB /* String+Crypto.swift in Sources */,
-				218E2D5B1D63FBA4000A60DB /* Digest.swift in Sources */,
-				218E2D5D1D63FBA4000A60DB /* Data+Crypto.swift in Sources */,
+				219E0C751FC55E8900F80DF1 /* String+Crypto.swift in Sources */,
+				219E0C731FC55E8900F80DF1 /* HMAC.swift in Sources */,
+				219E0C761FC55E8900F80DF1 /* Data+Crypto.swift in Sources */,
+				219E0C741FC55E8900F80DF1 /* Digest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,7 +789,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
@@ -802,7 +816,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/Mac",
 				);
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
@@ -814,6 +828,7 @@
 		211216571AE68AD3004E1CE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -824,7 +839,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CryptoTests/Info.plist;
+				INFOPLIST_FILE = "Support/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -834,13 +849,14 @@
 		211216581AE68AD3004E1CE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CryptoTests/Info.plist;
+				INFOPLIST_FILE = "Support/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -865,7 +881,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
@@ -889,7 +905,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
@@ -915,7 +931,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CryptoTests/Info.plist;
+				INFOPLIST_FILE = "Support/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -932,7 +948,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = CryptoTests/Info.plist;
+				INFOPLIST_FILE = "Support/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -954,7 +970,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
@@ -978,7 +994,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
@@ -996,7 +1012,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				INFOPLIST_FILE = CryptoTests/Info.plist;
+				INFOPLIST_FILE = "Support/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1009,7 +1025,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = CryptoTests/Info.plist;
+				INFOPLIST_FILE = "Support/Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nothingmagical.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1032,7 +1048,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
@@ -1056,7 +1072,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
 				);
-				INFOPLIST_FILE = Crypto/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samsoffes.crypto;
