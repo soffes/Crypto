@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CommonCrypto",
+        "repositoryURL": "https://github.com/soffes/CommonCrypto",
+        "state": {
+          "branch": "spm",
+          "revision": "3604396703fa9e76e923214498e89d7f4ea77550",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
