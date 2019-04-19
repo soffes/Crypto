@@ -1,11 +1,3 @@
-//
-//  NSString+Crypto.swift
-//  Crypto
-//
-//  Created by Sam Soffes on 4/21/15.
-//  Copyright (c) 2015 Sam Soffes. All rights reserved.
-//
-
 import Foundation
 import CommonCrypto
 
