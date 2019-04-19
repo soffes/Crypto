@@ -49,7 +49,7 @@ public struct HMAC {
 
 	public static func sign(data: Data, algorithm: Algorithm, key: Data) -> Data {
 		let signature = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: algorithm.digestLength)
-		defer { signature.deallocate(capacity: algorithm.digestLength) }
+		defer { signature.deallocate() }
 
 		data.withUnsafeBytes { dataBytes in
 			key.withUnsafeBytes { keyBytes in
