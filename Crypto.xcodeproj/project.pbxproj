@@ -8,20 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		211216491AE68AD3004E1CE6 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2112163D1AE68AD2004E1CE6 /* Crypto.framework */; };
-		217C55671D42D1C00064A2AD /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55661D42D1C00064A2AD /* CommonCrypto.framework */; };
-		217C556A1D42D1CF0064A2AD /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55691D42D1CF0064A2AD /* CommonCrypto.framework */; };
-		217C556D1D42D1E10064A2AD /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C556C1D42D1E10064A2AD /* CommonCrypto.framework */; };
-		217C55701D42D1ED0064A2AD /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217C556F1D42D1ED0064A2AD /* CommonCrypto.framework */; };
-		217C55731D42D2410064A2AD /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55691D42D1CF0064A2AD /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		217C55751D42D2550064A2AD /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217C55661D42D1C00064A2AD /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		217C55771D42D2680064A2AD /* CommonCrypto.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 217C556C1D42D1E10064A2AD /* CommonCrypto.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		219E0C651FC55E8100F80DF1 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C581FC55E8000F80DF1 /* HMAC.swift */; };
 		219E0C661FC55E8100F80DF1 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C591FC55E8000F80DF1 /* Digest.swift */; };
 		219E0C671FC55E8100F80DF1 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5A1FC55E8000F80DF1 /* String+Crypto.swift */; };
 		219E0C681FC55E8100F80DF1 /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5B1FC55E8000F80DF1 /* Data+Crypto.swift */; };
-		219E0C691FC55E8100F80DF1 /* Tests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 219E0C5D1FC55E8000F80DF1 /* Tests-Info.plist */; };
 		219E0C6A1FC55E8100F80DF1 /* Crypto.h in Headers */ = {isa = PBXBuildFile; fileRef = 219E0C5E1FC55E8000F80DF1 /* Crypto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		219E0C6B1FC55E8100F80DF1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 219E0C5F1FC55E8000F80DF1 /* Info.plist */; };
 		219E0C6F1FC55E8800F80DF1 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C581FC55E8000F80DF1 /* HMAC.swift */; };
 		219E0C701FC55E8800F80DF1 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C591FC55E8000F80DF1 /* Digest.swift */; };
 		219E0C711FC55E8800F80DF1 /* String+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219E0C5A1FC55E8000F80DF1 /* String+Crypto.swift */; };
@@ -78,7 +69,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				217C55731D42D2410064A2AD /* CommonCrypto.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,7 +79,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				217C55751D42D2550064A2AD /* CommonCrypto.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,7 +89,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				217C55771D42D2680064A2AD /* CommonCrypto.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217C556A1D42D1CF0064A2AD /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +139,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217C55671D42D1C00064A2AD /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +154,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217C556D1D42D1E10064A2AD /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,7 +169,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				217C55701D42D1ED0064A2AD /* CommonCrypto.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -537,8 +521,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				219E0C6B1FC55E8100F80DF1 /* Info.plist in Resources */,
-				219E0C691FC55E8100F80DF1 /* Tests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,10 +766,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -811,10 +790,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -873,10 +849,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -901,10 +874,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -966,10 +936,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -990,10 +957,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/tvOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1044,10 +1008,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1068,10 +1029,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Support/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
