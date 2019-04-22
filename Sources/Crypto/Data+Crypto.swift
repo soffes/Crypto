@@ -54,22 +54,6 @@ extension Data {
 	// MARK: - Internal
 
 	var hex: String {
-		var string = ""
-
-		#if swift(>=3.1)
-			enumerateBytes { pointer, index, _ in
-				for i in index..<pointer.count {
-					string += String(format: "%02x", pointer[i])
-				}
-			}
-		#else
-			enumerateBytes { pointer, count, _ in
-				for i in 0..<count {
-					string += String(format: "%02x", pointer[i])
-				}
-			}
-		#endif
-
-		return string
+		return map { String(format: "%02x", $0) }.reduce("", +)
 	}
 }
