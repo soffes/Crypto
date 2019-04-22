@@ -1,24 +1,12 @@
 # Crypto
 
 [![Version](https://img.shields.io/github/release/soffes/Crypto.svg)](https://github.com/soffes/Crypto/releases)
-![Swift Version](https://img.shields.io/badge/swift-4.0-orange.svg)
+![Swift Version](https://img.shields.io/badge/swift-5.0-orange.svg)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Simple CommonCrypto wrapper for Swift for macOS, iOS, watchOS, and tvOS with [Carthage](https://github.com/carthage/carthage) support.
 
-This library depends on [CommonCrypto](https://github.com/soffes/CommonCrypto) since you can't use it directly from Swift. If you don't my extensions and just want that made easy, use that library directly.
-
 Released under the [MIT license](LICENSE). Enjoy.
-
-| Swift Version | Crypto Version |
-| ------------- | -------------- |
-| 4.0           | 0.5.4          |
-| 3.0           | 0.5.3          |
-| 3.1           | 0.5.2          |
-| 3.0.1         | 0.5.1          |
-| 3.0           | 0.5.0          |
-| 2.3           | 0.4.1          |
-| 2.2           | 0.4.0          |
 
 
 ## Installation
@@ -38,7 +26,7 @@ Currently, only digest and HMAC are supported.
 
 ### Digest
 
-There are extensions for `NSData` and `String` for convenience:
+There are extensions for `Data` and `String` for convenience:
 
 ``` swift
 import Crypto
