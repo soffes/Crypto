@@ -45,7 +45,7 @@ public struct HMAC {
 
 		data.withUnsafeBytes { dataBytes in
 			key.withUnsafeBytes { keyBytes in
-				CCHmac(algorithm.algorithm, keyBytes, key.count, dataBytes, data.count, signature)
+				CCHmac(algorithm.algorithm, keyBytes.baseAddress, key.count, dataBytes.baseAddress, data.count, signature)
 			}
 		}
 

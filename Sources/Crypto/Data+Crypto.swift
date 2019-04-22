@@ -37,7 +37,7 @@ extension Data {
 		return digest(Digest.sha512)
 	}
 
-	private func digest(_ function: ((UnsafeRawPointer, UInt32) -> [UInt8])) -> Data {
+	private func digest(_ function: ((UnsafeRawBufferPointer, UInt32) -> [UInt8])) -> Data {
 		var hash: [UInt8] = []
 		withUnsafeBytes { hash = function($0, UInt32(count)) }
 		return Data(bytes: hash, count: hash.count)
