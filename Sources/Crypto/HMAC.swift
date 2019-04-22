@@ -36,7 +36,6 @@ public struct HMAC {
 		}
 	}
 
-
 	// MARK: - Signing
 
 	public static func sign(data: Data, algorithm: Algorithm, key: Data) -> Data {

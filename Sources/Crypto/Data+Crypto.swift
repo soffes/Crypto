@@ -43,13 +43,11 @@ extension Data {
 		return Data(bytes: hash, count: hash.count)
 	}
 
-
 	// MARK: - HMAC
 
 	public func hmac(key: Data, algorithm: Crypto.HMAC.Algorithm) -> Data {
 		return HMAC.sign(data: self, algorithm: algorithm, key: key)
 	}
-
 
 	// MARK: - Internal
 

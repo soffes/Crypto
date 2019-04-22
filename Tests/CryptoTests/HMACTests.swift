@@ -1,11 +1,3 @@
-//
-//  HMACTests.swift
-//  Crypto
-//
-//  Created by Sam Soffes on 12/5/15.
-//  Copyright © 2015 Sam Soffes. All rights reserved.
-//
-
 import XCTest
 import Crypto
 

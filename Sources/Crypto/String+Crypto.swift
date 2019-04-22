@@ -37,13 +37,11 @@ extension String {
 		return hashData?.sha512.hex
 	}
 
-
 	// MARK: - HMAC
 
 	public func hmac(key: String, algorithm: Crypto.HMAC.Algorithm) -> String? {
 		return Crypto.HMAC.sign(message: self, algorithm: algorithm, key: key)
 	}
-
 
 	// MARK: - Private
 
